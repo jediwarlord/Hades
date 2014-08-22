@@ -1,0 +1,2 @@
+C:\Users\Omer\Documents\GitHub\Hades\TestLauncher\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\Omer\Documents\GitHub\Hades\TestLauncher\WindowsFormsApplication1\bin\Debug\HadesTestLauncher.exe.config
