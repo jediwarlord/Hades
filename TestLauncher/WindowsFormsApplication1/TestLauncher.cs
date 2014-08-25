@@ -10,19 +10,21 @@ using System.Windows.Forms;
 
 namespace HadesTestLauncher
 {
-    public partial class Form1 : Form
+    public partial class TestLauncher : Form
     {
-        public Form1()
+        public TestLauncher()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void progressBar1_Click(object sender, EventArgs e)
         {
-            TestLauncher Progress = new TestLauncher();
 
-            UtitlityFunctions.RunBatchFile("DisPart_omer.bat");
+        }
 
+        private void TestLauncher_Load(object sender, EventArgs e)
+        {
+            //When the form loads start running the batchfiles that we will mark progress from.
         }
     }
 }
