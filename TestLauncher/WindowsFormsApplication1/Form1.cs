@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,12 +15,26 @@ namespace HadesTestLauncher
     {
         private String FilePath;
         Arguments CommandLine;
+        // The path to the key where Windows looks for startup applications
+        RegistryKey rkApp = Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run", true);
         
 
         public Form1(string[] args)
         {
             InitializeComponent();
             CommandLine = new Arguments(args);
+            // Check to see the current state (running at startup or not)
+            if (rkApp.GetValue("TestEFI") == null)
+            {
+                //The value was set.
+                rkApp.SetValue("TestEFI", Application.ExecutablePath.ToString());
+                //Get test results from previous run..
+            }
+            else
+            {
+                // The value exists, the application is set to run at startup
+                rkApp.DeleteValue("TestEFI", false);
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -41,10 +56,12 @@ namespace HadesTestLauncher
                 this.Close();
             } else
             {
-                ; UtitlityFunctions.LoadTestFiles(CommandLine["file"]);
+                UtitlityFunctions.LoadTestFiles(CommandLine["file"]);
                 //PopulateList();
                 
             }
+
+
 
 
             
@@ -71,6 +88,61 @@ namespace HadesTestLauncher
         private void button1_Click(object sender, EventArgs e)
         {
             PopulateList();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            TestInput Box = new TestInput();
+            if (Application.OpenForms[Box.Name] == null)
+            {
+                Box.ShowDialog();
+            }
+            else
+            {
+                Application.OpenForms[Box.Name].Focus();
+            }
+
+            // Check for Data that is sent back.
+            if ((Box.TestValue != null))
+            {
+                TestList.Items.Add(Box.TestValue);
+            }
+            else
+            {
+                MessageBox.Show("Nothing Was added!");
+            }
+           
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            //Clearing the file out.
+            System.IO.File.WriteAllText(CommandLine["file"], string.Empty);
+
+            //We want to save the contents of the testfile list.
+            using (System.IO.StreamWriter file = new System.IO.StreamWriter(CommandLine["file"]))
+            {
+                foreach (Object o in TestList.Items)
+                {
+                        file.WriteLine(o.ToString());   
+                }
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            while (TestList.SelectedItems.Count > 0)
+            {
+                TestList.Items.Remove(TestList.SelectedItem);
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            rkApp.SetValue("TestEFI", Application.ExecutablePath.ToString());
+
+            System.Diagnostics.Process.Start(@"C:\WINDOWS\system32\Shutdown", "-s -r 50");
         }
     }
 }
