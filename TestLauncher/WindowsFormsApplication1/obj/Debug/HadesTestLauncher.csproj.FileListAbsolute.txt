@@ -1,1 +1,9 @@
 C:\Users\ommalik\Documents\GitHub\Hades\TestLauncher\WindowsFormsApplication1\bin\Debug\HadesTestLauncher.exe.config
+C:\Users\ommalik\Documents\GitHub\Hades\TestLauncher\WindowsFormsApplication1\obj\Debug\HadesTestLauncher.csprojResolveAssemblyReference.cache
+C:\Users\ommalik\Documents\GitHub\Hades\TestLauncher\WindowsFormsApplication1\obj\Debug\HadesTestLauncher.Form1.resources
+C:\Users\ommalik\Documents\GitHub\Hades\TestLauncher\WindowsFormsApplication1\obj\Debug\HadesTestLauncher.Properties.Resources.resources
+C:\Users\ommalik\Documents\GitHub\Hades\TestLauncher\WindowsFormsApplication1\obj\Debug\HadesTestLauncher.csproj.GenerateResource.Cache
+C:\Users\ommalik\Documents\GitHub\Hades\TestLauncher\WindowsFormsApplication1\bin\Debug\HadesTestLauncher.exe
+C:\Users\ommalik\Documents\GitHub\Hades\TestLauncher\WindowsFormsApplication1\bin\Debug\HadesTestLauncher.pdb
+C:\Users\ommalik\Documents\GitHub\Hades\TestLauncher\WindowsFormsApplication1\obj\Debug\HadesTestLauncher.exe
+C:\Users\ommalik\Documents\GitHub\Hades\TestLauncher\WindowsFormsApplication1\obj\Debug\HadesTestLauncher.pdb

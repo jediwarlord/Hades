@@ -3,13 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Diagnostics.ProcessStartInfo;
 using System.Diagnostics;
+using System.IO;
+using System.Collections;
 
 namespace HadesTestLauncher
 {
     class UtitlityFunctions
     {
+        public static ArrayList TestList;
+
         public static bool RunBatchFile(string Batchfile)
         {
             int exitCode;
@@ -38,6 +41,48 @@ namespace HadesTestLauncher
             process.Close();
 
             return true;
+
+        }
+
+        public static bool CheckEfi()
+        {
+            DriveInfo[] allDrives = DriveInfo.GetDrives();
+
+            foreach (DriveInfo d in allDrives)
+            {
+                Console.WriteLine("Drive {0}", d.Name);
+
+                if ((d.Name).Contains("b"))
+                {
+
+                    return true;
+
+                }
+              
+            } // efi partition not found
+
+            return false;
+
+        }
+
+
+        public static void LoadTestFiles(String FileName)
+        {
+            int counter = 0;
+            string line;
+            TestList = new ArrayList();
+            // Read the file and display it line by line.
+            System.IO.StreamReader file =
+               new System.IO.StreamReader(FileName);
+            
+            //populate the test list on the form
+            while ((line = file.ReadLine()) != null)
+            {
+                TestList.Add(line);
+            }
+
+            file.Close();
+
 
         }
     }
