@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,7 +14,8 @@ namespace HadesTestLauncher
 {
     public partial class Form1 : Form
     {
-        private String FilePath;
+        private static String FilePath = @"z:\TestCases.txt";
+        private static String TestResults = @"z:\TestResults.txt";
         Arguments CommandLine;
         // The path to the key where Windows looks for startup applications
         RegistryKey rkApp = Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run", true);
@@ -45,26 +47,26 @@ namespace HadesTestLauncher
                 //not found...
                 MessageBox.Show("Efi Partition not found");
                // this.Close();
-
             }
-
            // Get File Name and launch file streamer.
             if (CommandLine["file"] == null)
             {
                 //no file specified
-                MessageBox.Show("File not found");
-                this.Close();
+                if (File.Exists(FilePath))
+                {
+                    //Let's use the hardcoded path instead then.
+                    UtitlityFunctions.LoadTestFiles(FilePath);
+                } else
+                {
+                    MessageBox.Show("File not found");
+                    this.Close();
+                }
+               
             } else
             {
                 UtitlityFunctions.LoadTestFiles(CommandLine["file"]);
                 //PopulateList();
-                
-            }
-
-
-
-
-            
+            }  
         }
 
 
@@ -141,8 +143,43 @@ namespace HadesTestLauncher
         private void button3_Click(object sender, EventArgs e)
         {
             rkApp.SetValue("TestEFI", Application.ExecutablePath.ToString());
-
             System.Diagnostics.Process.Start(@"C:\WINDOWS\system32\Shutdown", "-s -r 50");
+        }
+
+        private void ResultButton_Click(object sender, EventArgs e)
+        {
+             //Find the test cases and post results.
+            
+            if (File.Exists(CommandLine["TestResults"]))
+            {
+                GetResults(CommandLine["TestResults"]);
+            }
+            else if (File.Exists(TestResults))
+            {
+                GetResults(TestResults);
+            }
+            else
+            {
+                MessageBox.Show("File not found");
+                this.Close();
+            }
+        }
+
+        private void GetResults(string File)
+        {
+            string line = null;
+            string 
+
+            System.IO.StreamReader file =
+                new System.IO.StreamReader(File);
+            while ((line = file.ReadLine()) != null)
+            {
+               
+            }
+
+            file.Close();
+
+
         }
     }
 }

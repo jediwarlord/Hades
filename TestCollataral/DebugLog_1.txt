@@ -1,0 +1,1994 @@
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+
+------------------------ DXE CpuPlatformPolicy Dump Begin -----------------
+ CPU:: HtState - Deprecated from version 7
+ CPU:: LimitCpuidMaximumValue : 0x0
+ CPU:: ExecuteDisableBit : 0x1
+ CPU:: VmxEnable : 0x1
+ CPU:: SmxEnable : 0x0
+ CPU:: MachineCheckEnable : 0x1
+ CPU:: MonitorMwaitEnable : 0x1
+ CPU:: XapicEnable : 0x0
+ CPU:: IsColdReset - Deprecated from version 7
+ CPU:: MlcStreamerPrefetcher : 0x1
+ CPU:: ThreeStrikeCounterDisabled : 0x0
+ CPU:: EnableDts : 0x0
+ CPU:: FviReport : 0x1
+ CPU:: AesEnable : 0x1
+ CPU:: DebugInterfaceEnable : 0x1
+ CPU:: DebugInterfaceLockEnable : 0x1
+ CPU:: ApIdleManner : 0x1
+ CPU:: ApHandoffManner : 0x1
+ CPU:: BspSelection : - Deprecated from version 7
+ CPU:: SmmbaseSwSmiNumber : 0x55
+ CPU:: ProcTraceMemSize : 0xFF
+ CPU:: ProcTraceEnable : 0x0
+ CPU:: FviSmbiosType; : 0xDD
+ CPU:: SECURITY_CONFIG:TXT_FUNCTION_CONFIG : ResetAux : 0x0
+
+------------------------ DXE CpuPlatformPolicy Dump End -----------------
+PROGRESS CODE: V11007 I0
+Processor supports Boot Guard.
+Boot Guard ACM launch failed or ACM execution failed.
+Disable PBET
+PROGRESS CODE: V11005 I0
+Set MSR_IA32_DEBUG_INTERFACE to 1
+Initialize Processor Trace
+Processor Trace is not supported
+Lock processor features
+Program xAPIC
+Initialize Monitor Wait register
+Initialize Machine check registers
+Number of Machine check banks implemented: 7
+Initialize miscellaneous processor functions
+mCommonFeatures = 1F7
+CacheInfoCount = 5
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+mSetupVolatileData.PchGeneration = 1Node 0 Ch 0 Dimm 0 Size: 2048
+Node 0 Ch 0 Dimm 1 Size: 0
+Node 0 Ch 1 Dimm 0 Size: 2048
+Node 0 Ch 1 Dimm 1 Size: 0
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+HECI MeMode 0
+MbpPresent = 1
+MBP header: B29
+MbpSize: 29
+No. of Mbp Entries: B
+MBP Item 1 header: 20103
+MBP Item Data: 0
+MBP Item 2 header: 60105
+MBP Item Data: 8001
+MBP Item Data: 1
+MBP Item Data: D0301
+MBP Item Data: 0
+MBP Item Data: 0
+MBP Item 3 header: 20801
+MBP Item Data: 0
+MBP Item 4 header: 20501
+MBP Item Data: 42200301
+MBP Item 5 header: 20201
+MBP Item Data: 31101A40
+MBP Item 6 header: 20901
+MBP Item Data: A1FE5867
+MBP Item 7 header: 2030101
+MBP Item Data: A
+MBP Item Data: 4060019
+MBP Item 8 header: 2060301
+MBP Item Data: 660090
+MBP Item Data: D7FA09EC
+MBP Item Data: 537B2DCB
+MBP Item Data: 48722E0B
+MBP Item Data: 362BED2E
+MBP Item 9 header: 2090401
+MBP Item Data: F0DCD44C
+MBP Item Data: 3A767B55
+MBP Item Data: D140C6A8
+MBP Item Data: 4E0315A0
+MBP Item Data: 2F59050E
+MBP Item Data: 68FBF99D
+MBP Item Data: 224DDC7
+MBP Item Data: F9E98493
+MBP Item A header: 2020106
+MBP Item Data: 80000000
+MBP Item B header: 2040701
+MBP Item Data: 0
+MBP Item Data: 7
+MBP Item Data: 39
+Registered MbpCleared() event with EndOfDxeEvent group.
+HECI MeStatus 1E000255
+HECI MeMode 0
+
+------------------------ MeBiosPayload Data Protocol Dump Begin -----------------
+ Revision : 0x1
+MeBiosPayload FwVersionName ---
+ ME FW MajorVersion : 0xA
+ ME FW MinorVersion : 0x0
+ ME FW HotfixVersion : 0x19
+ ME FW BuildVersion : 0x406
+MeBiosPayload FwCapabilities ---
+ FullNet : 0x0
+ StdNet : 0x0
+ Manageability : 0x0
+ SmallBusiness : 0x0
+ IntelAT : 0x0
+ IntelCLS : 0x1
+ IntelMPC : 0x0
+ IccOverClocking : 0x1
+ PAVP : 0x1
+ IPV6 : 0x0
+ KVM : 0x0
+ OCH : 0x0
+ VLAN : 0x1
+ TLS : 0x0
+ WLAN : 0x0
+ EWS : 0x0
+ NFC : 0x0
+MeBiosPayload FwFeaturesState ---
+ FullNet : 0x1
+ StdNet : 0x1
+ Manageability : 0x1
+ SmallBusiness : 0x0
+ IntelAT : 0x1
+ IntelCLS : 0x1
+ IntelMPC : 0x0
+ IccOverClocking : 0x1
+ PAVP : 0x1
+ IPV6 : 0x1
+ KVM : 0x1
+ OCH : 0x1
+ VLAN : 0x1
+ TLS : 0x1
+ WLAN : 0x1
+ EWS : 0x0
+ NFC : 0x1
+MeBiosPayload RomBistData ---
+ DeviceId : 0x90
+ FuseTestFlags : 0x66
+ UMCHID[0x0] : 0xD7FA09EC 
+ UMCHID[0x1] : 0x537B2DCB 
+ UMCHID[0x2] : 0x48722E0B 
+ UMCHID[0x3] : 0x362BED2E 
+MeBiosPayload Platform Key ---
+ Key[0x0] : 0xF0DCD44C 
+ Key[0x1] : 0x3A767B55 
+ Key[0x2] : 0xD140C6A8 
+ Key[0x3] : 0x4E0315A0 
+ Key[0x4] : 0x2F59050E 
+ Key[0x5] : 0x68FBF99D 
+ Key[0x6] : 0x224DDC7 
+ Key[0x7] : 0xF9E98493 
+MeBiosPayload ME Platform TYpe ---
+ PlatformTargetUsageType : 0x1
+ PlatformTargetMarketType : 0x0
+ SuperSku : 0x0
+ IntelMeFwImageType : 0x3
+ PlatformBrand : 0x0
+MeBiosPayload IccProfile ---
+ NumIccProfiles : 0x1
+ IccProfileSoftStrap : 0x80
+ IccProfileIndex : 0x0
+ RegBundles : 0x1
+ RegMask[0x0] : 0xD0301
+MeBiosPayload AtState ---
+ State : 0x0
+ LastTheftTrigger : 0x0
+ LockState : 0x0
+ AuthenticateModule : 0x0
+ S3Authentication : 0x0
+ FlashWearOut : 0x0
+ FlashVariableSecurity : 0x0
+MeBiosPayload MFSIntegrity: 0x0
+MeBiosPayload NFC ---
+ DeviceType : 0x0
+ Hide : 0x1
+
+------------------------ MeBiosPayload Data Protocol Dump End -------------------
+ChipsetInitSyncCallback() Start
+ChipsetInitSyncCallback() End
+Intel AT is not supported
+HECI MeMode 0
+Registered MeScriptSaveEvent() event with EndOfDxeEvent group.
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+DPTF: ACPI Platform Policy Protocol is loaded.
+PROGRESS CODE: V3040003 I0
+SMRAM Map Buffer too small
+SMRAM Map Buffer too small
+SMM IPL registered SMM Entry Point address ACBE89A8
+SMM IPL failed to reset SMRAM window to EFI_MEMORY_UC
+SMM IPL closed SMRAM window
+SMRAM Map Buffer too small
+PROGRESS CODE: V3040002 I0
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+Init HPET Timer Driver
+HPET Base Address = 0xFED00000
+  HPET_GENERAL_CAPABILITIES_ID  = 0x0429B17F8086A701
+  HPET_GENERAL_CONFIGURATION    = 0x0000000000000000
+  HPET_GENERAL_INTERRUPT_STATUS = 0x0000000000000000
+  HPET_MAIN_COUNTER             = 0x0000000002D6D2C8
+  HPET Main Counter Period      = 69841279 (fs)
+  HPET_TIMER0_CONFIGURATION     = 0x00F0000000008030
+  HPET_TIMER0_COMPARATOR        = 0x0000000000000000
+  HPET_TIMER0_MSI_ROUTE         = 0x0000000000000000
+  HPET_TIMER1_CONFIGURATION     = 0x00F0000000008000
+  HPET_TIMER1_COMPARATOR        = 0x00000000FFFFFFFF
+  HPET_TIMER1_MSI_ROUTE         = 0x0000000000000000
+  HPET_TIMER2_CONFIGURATION     = 0x00F0080000008000
+  HPET_TIMER2_COMPARATOR        = 0x00000000FFFFFFFF
+  HPET_TIMER2_MSI_ROUTE         = 0x0000000000000000
+  HPET_TIMER3_CONFIGURATION     = 0x00F0100000008000
+  HPET_TIMER3_COMPARATOR        = 0x00000000FFFFFFFF
+  HPET_TIMER3_MSI_ROUTE         = 0x0000000000000000
+  HPET_TIMER4_CONFIGURATION     = 0x000000000000C000
+  HPET_TIMER4_COMPARATOR        = 0x00000000FFFFFFFF
+  HPET_TIMER4_MSI_ROUTE         = 0x0000000000000000
+  HPET_TIMER5_CONFIGURATION     = 0x000000000000C000
+  HPET_TIMER5_COMPARATOR        = 0x00000000FFFFFFFF
+  HPET_TIMER5_MSI_ROUTE         = 0x0000000000000000
+  HPET_TIMER6_CONFIGURATION     = 0x000000000000C000
+  HPET_TIMER6_COMPARATOR        = 0x00000000FFFFFFFF
+  HPET_TIMER6_MSI_ROUTE         = 0x0000000000000000
+  HPET_TIMER7_CONFIGURATION     = 0x000000000000C000
+  HPET_TIMER7_COMPARATOR        = 0x00000000FFFFFFFF
+  HPET_TIMER7_MSI_ROUTE         = 0x0000000000000000
+Choose 64-bit HPET timer.
+HPET Interrupt Mode MSI
+HPET Interrupt Vector     = 0x40
+HPET Counter Mask         = 0xFFFFFFFFFFFFFFFF
+HPET Timer Period         = 100000
+HPET Timer Count          = 0x0000000000022F4D
+HPET_TIMER0_CONFIGURATION = 0x00F000000000C034
+HPET_TIMER0_COMPARATOR    = 0x0000000002D90216
+HPET_TIMER0_MSI_ROUTE     = 0xFEE0000000000140
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+<BootTimeEntry><BootTimeEntry: BootTime Variable isn't ready>PROGRESS CODE: V3040003 I0
+SMRAM Map Buffer too small
+SMRAM Map Buffer too small
+SMRAM Map Buffer too small
+SMRAM Map Buffer too small
+SMRAM Map Buffer too small
+SMRAM Map Buffer too small
+SMRAM Map Buffer too small
+SMRAM Map Buffer too small
+SMRAM Map Buffer too small
+SMRAM Map Buffer too small
+SMRAM Map Buffer too small
+SMRAM Map Buffer too small
+SMRAM Map Buffer too small
+SMRAM Map Buffer too small
+SMRAM Map Buffer too small
+SMRAM Map Buffer too small
+Running CpuSetupInitCallback...
+PROGRESS CODE: V3040002 I0
+[TcgSetup]: TpmOperation:0
+[TcgSetup]: HideTpm:0, dTpm12Present:0, TpmCurrentState:0
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+SmbiosMiscEntryPoint(): Entry~!
+(MiscBiosVendor) Entry.
+BIOS ID: BDW-E2N1.86C.0075.D00.1408222041
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: Intel Corporation
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: BDW-E2N1.86C.0075.D00.1408222041
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: 08/22/2014
+(MiscSystemManufacturer) Entry.
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: Intel Corporation
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: Broadwell Client platform
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: 0.1
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: System Serial Number
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: System SKUNumber
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: Broadwell Client System
+(MiscBaseBoardManufacturer) Entry.
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: Harris Beach SDS
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: 4
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: Intel Corp.
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: 1
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: Base Board Asset Tag
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: Part Component
+(MiscChassisManufacturer) Entry.
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: Intel Corporation
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: 0.1
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: serial#
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: Asset Tag
+(MiscBootInfoStatus) Entry.
+(NumberOfInstallableLanguages) Entry.
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: English
+(SystemOptionString) Entry.
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: J6H1:1-X CMOS CLEAR(default); J8H1:1-X BIOS RECOVERY
+(MiscPortInternalConnectorDesignator) Entry.
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: None
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: Keyboard
+(MiscPortInternalConnectorDesignator) Entry.
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: None
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: Mouse
+(MiscPortInternalConnectorDesignator) Entry.
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: None
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: COM 1
+(MiscPortInternalConnectorDesignator) Entry.
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: J1A2B
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: Video
+(MiscPortInternalConnectorDesignator) Entry.
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: J3A2
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: HDMI
+(MiscPortInternalConnectorDesignator) Entry.
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: None
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: USB1.1 - 1#
+(MiscPortInternalConnectorDesignator) Entry.
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: None
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: USB1.1 - 2#
+(MiscPortInternalConnectorDesignator) Entry.
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: None
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: USB1.1 - 3#
+(MiscPortInternalConnectorDesignator) Entry.
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: None
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: USB1.1 - 4#
+(MiscPortInternalConnectorDesignator) Entry.
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: None
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: USB1.1 - 5#
+(MiscPortInternalConnectorDesignator) Entry.
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: None
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: USB2.0 - 1#
+(MiscPortInternalConnectorDesignator) Entry.
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: None
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: USB2.0 - 2#
+(MiscPortInternalConnectorDesignator) Entry.
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: None
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: Ethernet
+(MiscPortInternalConnectorDesignator) Entry.
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: J8J1
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: SATA Port 0 Direct Connect
+(MiscPortInternalConnectorDesignator) Entry.
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: J7J1
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: eSATA Port 4
+(MiscPortInternalConnectorDesignator) Entry.
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: J6J1
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: eSATA Port 3
+(MiscPortInternalConnectorDesignator) Entry.
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: J7G1 - SATA Port 2
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: None
+(MiscPortInternalConnectorDesignator) Entry.
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: J7G2 - SATA Port 1
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: None
+(MiscPortInternalConnectorDesignator) Entry.
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: J1F2
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: AC IN
+(MiscPortInternalConnectorDesignator) Entry.
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: J5B1 - PCH JTAG
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: None
+(MiscPortInternalConnectorDesignator) Entry.
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: J9A1 - TPM/PORT 80
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: None
+(MiscPortInternalConnectorDesignator) Entry.
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: J9E4 - HDA 2X8 Header
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: None
+(MiscPortInternalConnectorDesignator) Entry.
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: J9E7 - HDA 8Pin Header
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: None
+(MiscPortInternalConnectorDesignator) Entry.
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: J8F1 - HDA HDMI
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: None
+(MiscPortInternalConnectorDesignator) Entry.
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: J9E3 - Scan Matrix Keyboard
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: None
+(MiscPortInternalConnectorDesignator) Entry.
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: J8E1 - SPI Program
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: None
+(MiscPortInternalConnectorDesignator) Entry.
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: J9E5 - LPC Hot Docking
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: None
+(MiscPortInternalConnectorDesignator) Entry.
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: J9G2 - LPC SIDE BAND
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: None
+(MiscPortInternalConnectorDesignator) Entry.
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: J8F2 - LPC Slot
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: None
+(MiscPortInternalConnectorDesignator) Entry.
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: J8H3 - PCH XDP
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: None
+(MiscPortInternalConnectorDesignator) Entry.
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: J6H1 - SATA Power
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: None
+(MiscPortInternalConnectorDesignator) Entry.
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: J5J1 - FP Header
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: None
+(MiscPortInternalConnectorDesignator) Entry.
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: J4H1 - ATX Power
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: None
+(MiscPortInternalConnectorDesignator) Entry.
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: J1J3 - AVMC
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: None
+(MiscPortInternalConnectorDesignator) Entry.
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: J1H1 - BATT B
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: None
+(MiscPortInternalConnectorDesignator) Entry.
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: J1H2 - BATT A
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: None
+(MiscPortInternalConnectorDesignator) Entry.
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: J2G1 - CPU Fan
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: None
+(MiscPortInternalConnectorDesignator) Entry.
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: J1D3 - XDP
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: None
+(MiscPortInternalConnectorDesignator) Entry.
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: J4V1 - Memory Slot 1
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: None
+(MiscPortInternalConnectorDesignator) Entry.
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: J4V2 - Memory Slot 2
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: None
+(MiscPortInternalConnectorDesignator) Entry.
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: J4C1 - FAN PWR
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: None
+(MiscSystemSlotDesignator) Entry.
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: PCI-Express 0
+(MiscSystemSlotDesignator) Entry.
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: PCI-Express 1
+(MiscSystemSlotDesignator) Entry.
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: PCI-Express 2
+(MiscSystemSlotDesignator) Entry.
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: PCI-Express 3
+(MiscSystemSlotDesignator) Entry.
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: PCI-Express 4
+(MiscSystemSlotDesignator) Entry.
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: PCI-Express 5
+(MiscSystemSlotDesignator) Entry.
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: PCI-Express 6
+(MiscOnBoardDevice) Entry.
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: To Be Filled by O.E.M.
+(Type10) SmbiosRecord->Hdr.Type is 10 
+(Type10) SmbiosRecord->Hdr.Length is 6 
+(MiscOnBoardDevice) Entry.
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: To Be Filled by O.E.M.
+(Type10) SmbiosRecord->Hdr.Type is 10 
+(Type10) SmbiosRecord->Hdr.Length is 6 
+(MiscOnBoardDevice) Entry.
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: To Be Filled by O.E.M.
+(Type10) SmbiosRecord->Hdr.Type is 10 
+(Type10) SmbiosRecord->Hdr.Length is 6 
+(MiscOemType0x88) Entry.
+(MiscPortableBattery) Entry.
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: Real 1
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: E-One Moli Energy
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: 01/01/2013
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: FSPK50074
+(SmbiosStrInit) Entry.
+(SmbiosStrInit) Source string: MOLICEL
+Misc smbios store error.  Index=59, ReturnStatus=Out of Resources
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+ SetupEntry: Setup variable was found
+ SetupEntry: CPU nvram variables was updated
+ SetupCallback: EfiHiiConfigRoutingProtocolGuid was found.
+ InstallHiiResources: UpdateCallBack was done.
+ InstallHiiResources: HiiPackages was added.
+ InstallHiiResources: UpdateCallBack was done.
+ InstallHiiResources: HiiPackages was added.
+ InstallHiiResources: UpdateCallBack was done.
+ InstallHiiResources: HiiPackages was added.
+ InstallHiiResources: UpdateCallBack was done.
+ InstallHiiResources: HiiPackages was added.
+ SetupCallback: HiiResources was installed.
+ SetupCallback: SetupVar was found.
+ SetupCallback was done.
+ SetupEntry: SetupCallback was done.
+ SetupEntry: HII resources was installed
+ SetupEntry: PlatformReset was installed
+
+ In Setup Entry, GetVariable OsProfile Status = Success, attributes = 7 
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+IsctDxe: Entry Point...
+ISCT: Get Variable Status = 0
+ISCT is Disabled 
+The CurrProcessor 0x0 ApicId is 0x0
+The CurrProcessor 0x1 ApicId is 0x1
+The CurrProcessor 0x2 ApicId is 0x2
+The CurrProcessor 0x3 ApicId is 0x3
+Package = 0,  Die = 0,  Core = 0,  Thread = 0,  ApicId = 0
+Package = 0,  Die = 0,  Core = 0,  Thread = 1,  ApicId = 1
+Package = 0,  Die = 0,  Core = 1,  Thread = 0,  ApicId = 2
+Package = 0,  Die = 0,  Core = 1,  Thread = 1,  ApicId = 3
+MaxCpuCore    = 1
+MaxCpuThread    = 1
+
+mSbspPackageInfo.BspApicId      = 0
+mSbspPackageInfo.TotalThreads     = 4
+mSbspPackageInfo.PackageNo        = 0
+mSbspPackageInfo.CoreNo           = 2
+mSbspPackageInfo.LogicalThreadNo  = 2
+Index = 0,  ApicId = 0,  Package = 0
+Index = 1,  ApicId = 2,  Package = 0
+Index = 2,  ApicId = 1,  Package = 0
+Index = 3,  ApicId = 3,  Package = 0
+AcpiLocalApic: AcpiProcessorId=1;   ApicId=0, Flags=1
+AcpiLocalApic: AcpiProcessorId=2;   ApicId=2, Flags=1
+AcpiLocalApic: AcpiProcessorId=3;   ApicId=1, Flags=1
+AcpiLocalApic: AcpiProcessorId=4;   ApicId=3, Flags=1
+AcpiLocalApic: AcpiProcessorId=5;   ApicId=FF, Flags=0
+AcpiLocalApic: AcpiProcessorId=6;   ApicId=FF, Flags=0
+AcpiLocalApic: AcpiProcessorId=7;   ApicId=FF, Flags=0
+AcpiLocalApic: AcpiProcessorId=8;   ApicId=FF, Flags=0
+[AcpiPlatform] Update ME GNVS Area.
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+
+GopConfigDriver updating GOP VBT fields.PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+AcpiGlobalVariableEntryPoint Start
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+(ICC) Entry Point to ICC_Platform
+IccPlatform: ICC library version initialized.
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+Overclockinterface entrypoint.
+Overclock gRT = AB4EBE18.
+gSetupData.OverclockingSupport = 0.
+PROGRESS CODE: V3040003 I0
+SMRAM Map Buffer too small
+PROGRESS CODE: V3040002 I0
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+FMP Installed Notify
+Failed to Locate handle from notify value. Status: Not Found
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+SdHostDriverEntryPoint.
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+
+
+------------------------ PowerMangement Policy dump Begin -----------------
+
+ S3RestoreMsrSwSmiNumber : 48
+
+ Ppm Lock Enables... 
+ PmgCstCfgCtrlLock : 1
+ ProcHotLock : 0
+
+ FunctionEnables... 
+ Eist : 1
+ Cx : 1
+ C1e : 1
+ C3 : 1
+ C6 : 1
+ C6 Long Latency: 0
+ DeepCState : 2
+ C7 Long Latency : 1
+ C1Autodemotion : 1
+ C3AutoDemotion : 1
+ C1Undemotion : 1
+ C3UnDemotion : 1
+ PkgCstateUndemotion : 0
+ PkgCState Demotion : 0
+ CStatePreWake : 1
+ TurboMode : 1
+ PowerLimit2 : 1
+ EnergyEfficientPState : 1
+ LakeTiny Support : 0
+ PkgCStateLimit : FF
+ TimedMwait : 0
+ CstateLatencyControl0TimeUnit : 2
+ CstateLatencyControl1TimeUnit : 2
+ CstateLatencyControl2TimeUnit : 2
+ CstateLatencyControl3TimeUnit : 2
+ CstateLatencyControl4TimeUnit : 2
+ CstateLatencyControl5TimeUnit : 2
+ CstateLatencyControl0Irtl : 42
+ CstateLatencyControl1Irtl : 73
+ CstateLatencyControl2Irtl : 91
+ RfiFreqTunningOffsetIsNegative : 0
+ RfiFreqTunningOffset : 0
+
+ Turbo settings... 
+ PowerLimit1 : 0
+ PowerLimit1Time : 0
+ PowerLimit2 : 0
+ PowerLimit3 : 0
+ PowerLimit3Time : 0
+ PowerLimit3DutyCycle : 0
+ PowerLimit3Lock : 1
+ TurboPowerLimitLock : 0
+ ConfigTdpLevel : 0
+ ConfigTdpLock : 0
+ ConfigTdpCustom : 0
+
+ CustomRatioTable... 
+ VidNumber : 0
+ VidCpuid : 651
+ VidMaxRatio : 8
+ StateRatio[0] : 0
+ StateRatio[1] : 0
+ StateRatio[2] : 0
+ StateRatio[3] : 0
+ StateRatio[4] : 0
+ StateRatio[5] : 0
+ StateRatio[6] : 0
+ StateRatio[7] : 0
+ StateRatio[8] : 0
+ StateRatio[9] : 0
+ StateRatio[10] : 0
+ StateRatio[11] : 0
+ StateRatio[12] : 0
+ StateRatio[13] : 0
+ StateRatio[14] : 0
+ StateRatio[15] : 0
+
+ XeConfig... 
+ Xe : 0
+ RatioLimit[0] : 1D
+ RatioLimit[1] : 1A
+ RatioLimit[2] : 1A
+ RatioLimit[3] : 1A
+ BiProcHot : 1
+ DisableProcHotOut : 0
+ DisableVRThermalAlert : 0
+ ProcHotResponce : 0
+ TStates : 0
+ AutoThermalReporting : 0
+ ThermalMonitor : 1
+
+
+------------------------ PowerMangement Policy dump End -------------------
+
+GV3 capable
+PPM:: ConfigTDP Supported Levels=2
+PPM:: ConfigTDP Nominal Ratio=19 Tdp=120
+PPM:: ConfigTDP Level1 Ratio=8 Tdp=92
+PPM:: ConfigTDP Level2 Ratio=25 Tdp=200
+PPM:: mMinBusRatio Modified for Ctdp 7
+MSR(1FC) before configuring C1E: 0 4005E
+MSR(1FC) after configuring C1E: 0 4005E
+Programming the 0xC3/C6/C7 (MSR 0x60A, 0x60B ,0X60C Latencies 
+MSR(60A) before configuring Latency: 0 0
+MSR(60B) before configuring Latency: 0 0
+MSR(60C) before configuring Latency: 0 0
+MSR(633) before configuring Latency: 0 0
+MSR(634) before configuring Latency: 0 0
+MSR(635) before configuring Latency: 0 0
+Initializing 24MHz BCLK calibration 
+Initiate PCODE 24MHz BCLK calibration 
+(MAILBOX) Mailbox Write Command = 09h
+(MAILBOX) Mailbox Status = 00h
+24MHz BCLK calibration completed 
+Failed to locate Acpi Support Protocol! Status = Success
+Failed to locate Acpi Table Protocol! Status = Success
+ TAR Ratio Replace at 7 with 12 
+ CTDP Ratio Replace at with PPM:: Ctdp BIOS PL1/PL2 Override Ctdp SKU Found  :1500  override table index :1
+PPM:: ConfigTDP MSR_CONFIG_TDP_CONTROL=0
+PPM:: ConfigTDP MSR_TURBO_ACTIVATION_RATIO=12
+(MAILBOX) Mailbox Read Command = 15h
+(MAILBOX) Mailbox Status = 00h
+Current Pl1ThermalControl reading from Mailbox : 0. Requested setting to Mailbox: 1
+(MAILBOX) Mailbox Write Command = 16h
+(MAILBOX) Mailbox Status = 00h
+DDR Power Limit 1 = 145
+DDR Power Limit 2 = 222
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+Installed: gEfiDriverBindingProtocolGuid on   0x00000000A752AD18
+Installed: gEfiComponentNameProtocolGuid on   0x00000000A752AD18
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+Installed: gEfiDriverBindingProtocolGuid on   0x00000000A752A818
+Installed: gEfiComponentNameProtocolGuid on   0x00000000A752A818
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+Installed: gEfiDriverBindingProtocolGuid on   0x00000000A752A318
+Installed: gEfiComponentNameProtocolGuid on   0x00000000A752A318
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+Locate platformgoppolicy and GetVbtData
+GetVbtData
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+Fmp Device Lib returned unsupported for Register Function.  Installing single instance of FMP.
+FMP Installed Notify
+INFO: Converted 0x1000000 to 1.0.0.0
+Failed to get the Lowest Supported Version from variable.  Status = Not Found
+Failed to get the Last Attempt Version from variable.  Status = Not Found
+Failed to get the Last Attempt Status from variable.  Status = Not Found
+Failed to Locate handle from notify value. Status: Not Found
+Device Lib Wrapper FMP: FMP Protocol Installed!
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+SaInitDxe Start
+
+------------------------ SA Platform Policy (DXE) dump BEGIN -----------------
+Revision : B
+------------------------ SA_VTD_CONFIGURATION -----------------
+ VtdEnable : 1
+ RmrrUsbBaseAddress : A7F69B98
+X2ApicOptOut : 1
+ VtdBaseAddress[2] : FED90000 FED91000
+------------------------ SA_MEMORY_CONFIGURATION -----------------
+ SpdAddressTable[4] : A2 A0 A2 A0
+ ChannelASlotMap : 1
+ ChannelBSlotMap : 1
+ MrcTimeMeasure : 0
+ MrcFastBoot : 0
+------------------------ SA_PCIE_CONFIGURATION -----------------
+ DmiAspm : 3
+ PegAspm[3] : 4 4 4
+ PegAspmL0s[3] : 3 3 3
+ PegDeEmphasis[3] : 1 1 1
+ DmiExtSync : 0
+ DmiDeEmphasis : 0
+ DmiIot : 0
+------------------------ PCIE_ASPM_DEV_INFO -----------------
+ VendorId DeviceId RevId RootApmcMask EndpointApmcMask
+ 8086     108B     FF    2            2
+ 8086     108C     00    0            0
+ 8086     108C     FF    2            2
+ 8086     109A     FF    2            2
+ 8086     4222     FF    2            3
+ 8086     4227     FF    2            3
+ 8086     4228     FF    2            3
+------------------------ END_OF_TABLE -----------------------
+------------------------ PCIE_LTR_DEV_INFO -----------------
+ VendorId DeviceId RevId SnoopLatency NonSnoopLatency
+------------------------ END_OF_TABLE ----------------------
+ PegPwrOpt[0].LtrEnable            : 1
+ PegPwrOpt[0].LtrMaxSnoopLatency   : 846
+ PegPwrOpt[0].ObffEnable           : 1
+ PegPwrOpt[0].LtrMaxNoSnoopLatency : 846
+ PegPwrOpt[1].LtrEnable            : 1
+ PegPwrOpt[1].LtrMaxSnoopLatency   : 846
+ PegPwrOpt[1].ObffEnable           : 1
+ PegPwrOpt[1].LtrMaxNoSnoopLatency : 846
+ PegPwrOpt[2].LtrEnable            : 1
+ PegPwrOpt[2].LtrMaxSnoopLatency   : 846
+ PegPwrOpt[2].ObffEnable           : 1
+ PegPwrOpt[2].LtrMaxNoSnoopLatency : 846
+------------------------ SA_SG_VBIOS_CONFIGURATION -----------------
+ LoadVbios : 0
+ ExecuteVbios : 0
+ VbiosSource : 0
+------------------------ SA_IGD_CONFIGURATION -----------------
+ RenderStandby : 1
+ PmSupport : 1
+ PavpEnable : 1
+------------------------ SA_MISC_CONFIGURATION -----------------
+ ChapDeviceEnable : 0
+ Device4Enable : 0
+ SubSystemVendorId : 8086
+ SubSystemId : 2010
+ CridEnable : 0
+ AudioEnable : 1
+ FviReport : 1
+ FviSmbiosType : DD
+ EnableAbove4GBMmio : 0
+
+------------------------ SA Platform Policy (DXE) dump END -----------------
+Install SA GNVS protocol
+Initializing PciExpress (Dxe)
+ Going to call Cid1Cid2DmiPortInit
+ Going to call Cid1TopologyInit
+ Going to call Cid2TopologyInit
+Internal Device and Misc Configurations
+Initializing Legacy Region
+Initializing GT PowerManagement and other GT POST related
+ Update Igd SA Global NVS Area.
+Initializing PAVP
+Initializing GT PowerManagement for HSW  
+Successfully initialized GT PowerManagement for HSW  
+Free up allocated memory space for HSW GTT MMADR Size of 4MB 
+Free up allocated memory space for GMADR 
+Initializing CPU Audio (dHDA) device
+Codec Initialization...
+SendCodecCommand(0xAB8B3F1C): 0xF0000 
+SendCodecCommand(0xAB8B3F20): 0xF0002 
+Detected SA HDA Codec with verb table, VendorID = 0x80862807 on SDI0, revision = 0x0.
+SendCodecCommand(0xAB8B3F24): 0x878101 
+SendCodecCommand(0xAB8B3F28): 0x571C10 
+SendCodecCommand(0xAB8B3F2C): 0x571D00 
+SendCodecCommand(0xAB8B3F30): 0x571E56 
+SendCodecCommand(0xAB8B3F34): 0x571F18 
+SendCodecCommand(0xAB8B3F38): 0x671C20 
+SendCodecCommand(0xAB8B3F3C): 0x671D00 
+SendCodecCommand(0xAB8B3F40): 0x671E56 
+SendCodecCommand(0xAB8B3F44): 0x671F18 
+SendCodecCommand(0xAB8B3F48): 0x771C30 
+SendCodecCommand(0xAB8B3F4C): 0x771D00 
+SendCodecCommand(0xAB8B3F50): 0x771E56 
+SendCodecCommand(0xAB8B3F54): 0x771F18 
+Verb Table loading complete to Codec on SDI0
+SDI1 has no Codec device.
+SDI2 has no Codec device.
+SDI3 has no Codec device.
+AudioInit() End
+Initializing VT-d
+VTd enabled
+Initializing IGD OpRegion
+Init SA SSDT table
+SaInitDxe End
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3040002 I0
+CPPC: Platform Policy Protocol is loaded.
+CPPC: PCCA memory buffer address: AB88C018
+CPPC: Found Cppc SSDT signature.
+CPPC: PCCA pointer updated in SSDT: AB88C018
+CPPC: PCCS length updated in SSDT: 1000
+CPPC: PENB updated in SSDT: 1
+PCCT: Found PCCT signature.
+PCCT: Patch the EFI_ACPI_5_0_PCCT_SUBSPACE_GENERIC structure.
+CPPC: Found _CPC SSDT signature.
+PROGRESS CODE: V3040003 I0
+SMRAM Map Buffer too small
+SMRAM Map Buffer too small
+SMRAM Map Buffer too small
+PROGRESS CODE: V3040002 I0
+Creating BDAT Table...
+Found Schema List HOB
+BdatSchemaListHob->SchemaHobCount = 0, SchemaCount = 0
+No BDAT data exists, exiting without creating table
+PROGRESS CODE: V3040003 I0
+PROGRESS CODE: V3041001 I0
+[Bds] Entry...
+[BdsDxe] Locate Variable Lock protocol - Success
+PROGRESS CODE: V3051005 I0
+PROGRESS CODE: V2010000 I0
+PCI Bus First Scanning
+PROGRESS CODE: V2011000 I0
+PciBus: Discovered PCI @ [00|00|00]
+
+PciBus: Discovered PCI @ [00|02|00]
+   BAR[0]: Type =  Mem64; Alignment = 0x3FFFFF;	Length = 0x400000;	Offset = 0x10
+   BAR[1]: Type = PMem64; Alignment = 0xFFFFFFF;	Length = 0x10000000;	Offset = 0x18
+   BAR[2]: Type =   Io16; Alignment = 0x3F;	Length = 0x40;	Offset = 0x20
+
+PciBus: Discovered PCI @ [00|03|00]
+   BAR[0]: Type =  Mem64; Alignment = 0x3FFF;	Length = 0x4000;	Offset = 0x10
+
+PciBus: Discovered PCI @ [00|14|00]
+   BAR[0]: Type =  Mem64; Alignment = 0xFFFF;	Length = 0x10000;	Offset = 0x10
+
+PciBus: Discovered PCI @ [00|16|00]
+   BAR[0]: Type =  Mem64; Alignment = 0xFFF;	Length = 0x20;	Offset = 0x10
+
+PciBus: Discovered PCI @ [00|16|01]
+   BAR[0]: Type =  Mem64; Alignment = 0xFFF;	Length = 0x20;	Offset = 0x10
+
+PciBus: Discovered PCI @ [00|1B|00]
+   BAR[0]: Type =  Mem64; Alignment = 0x3FFF;	Length = 0x4000;	Offset = 0x10
+
+PciBus: Discovered PCI @ [00|1D|00]
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x400;	Offset = 0x10
+
+PciBus: Discovered PCI @ [00|1F|00]
+
+PciBus: Discovered PCI @ [00|1F|02]
+   BAR[0]: Type =   Io16; Alignment = 0x7;	Length = 0x8;	Offset = 0x10
+   BAR[1]: Type =   Io16; Alignment = 0x3;	Length = 0x4;	Offset = 0x14
+   BAR[2]: Type =   Io16; Alignment = 0x7;	Length = 0x8;	Offset = 0x18
+   BAR[3]: Type =   Io16; Alignment = 0x3;	Length = 0x4;	Offset = 0x1C
+   BAR[4]: Type =   Io16; Alignment = 0x1F;	Length = 0x20;	Offset = 0x20
+   BAR[5]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x800;	Offset = 0x24
+
+PciBus: Discovered PCI @ [00|1F|03]
+   BAR[0]: Type =  Mem64; Alignment = 0xFFF;	Length = 0x100;	Offset = 0x10
+   BAR[3]: Type =   Io16; Alignment = 0x1F;	Length = 0x20;	Offset = 0x20
+
+PciBus: Discovered PCI @ [00|1F|06]
+   BAR[0]: Type =  Mem64; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PCI Bus Second Scanning
+PROGRESS CODE: V2011000 I0
+PciBus: Discovered PCI @ [00|00|00]
+
+PciBus: Discovered PCI @ [00|02|00]
+   BAR[0]: Type =  Mem64; Alignment = 0x3FFFFF;	Length = 0x400000;	Offset = 0x10
+   BAR[1]: Type = PMem64; Alignment = 0xFFFFFFF;	Length = 0x10000000;	Offset = 0x18
+   BAR[2]: Type =   Io16; Alignment = 0x3F;	Length = 0x40;	Offset = 0x20
+
+PciBus: Discovered PCI @ [00|03|00]
+   BAR[0]: Type =  Mem64; Alignment = 0x3FFF;	Length = 0x4000;	Offset = 0x10
+
+PciBus: Discovered PCI @ [00|14|00]
+   BAR[0]: Type =  Mem64; Alignment = 0xFFFF;	Length = 0x10000;	Offset = 0x10
+
+PciBus: Discovered PCI @ [00|16|00]
+   BAR[0]: Type =  Mem64; Alignment = 0xFFF;	Length = 0x20;	Offset = 0x10
+
+PciBus: Discovered PCI @ [00|16|01]
+   BAR[0]: Type =  Mem64; Alignment = 0xFFF;	Length = 0x20;	Offset = 0x10
+
+PciBus: Discovered PCI @ [00|1B|00]
+   BAR[0]: Type =  Mem64; Alignment = 0x3FFF;	Length = 0x4000;	Offset = 0x10
+
+PciBus: Discovered PCI @ [00|1D|00]
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x400;	Offset = 0x10
+
+PciBus: Discovered PCI @ [00|1F|00]
+
+PciBus: Discovered PCI @ [00|1F|02]
+   BAR[0]: Type =   Io16; Alignment = 0x7;	Length = 0x8;	Offset = 0x10
+   BAR[1]: Type =   Io16; Alignment = 0x3;	Length = 0x4;	Offset = 0x14
+   BAR[2]: Type =   Io16; Alignment = 0x7;	Length = 0x8;	Offset = 0x18
+   BAR[3]: Type =   Io16; Alignment = 0x3;	Length = 0x4;	Offset = 0x1C
+   BAR[4]: Type =   Io16; Alignment = 0x1F;	Length = 0x20;	Offset = 0x20
+   BAR[5]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x800;	Offset = 0x24
+
+PciBus: Discovered PCI @ [00|1F|03]
+   BAR[0]: Type =  Mem64; Alignment = 0xFFF;	Length = 0x100;	Offset = 0x10
+   BAR[3]: Type =   Io16; Alignment = 0x1F;	Length = 0x20;	Offset = 0x20
+
+PciBus: Discovered PCI @ [00|1F|06]
+   BAR[0]: Type =  Mem64; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PCI @ [00|00|00]
+
+PciBus: Discovered PCI @ [00|02|00]
+   BAR[0]: Type =  Mem64; Alignment = 0x3FFFFF;	Length = 0x400000;	Offset = 0x10
+   BAR[1]: Type = PMem64; Alignment = 0xFFFFFFF;	Length = 0x10000000;	Offset = 0x18
+   BAR[2]: Type =   Io16; Alignment = 0x3F;	Length = 0x40;	Offset = 0x20
+
+PciBus: Discovered PCI @ [00|03|00]
+   BAR[0]: Type =  Mem64; Alignment = 0x3FFF;	Length = 0x4000;	Offset = 0x10
+
+PciBus: Discovered PCI @ [00|14|00]
+   BAR[0]: Type =  Mem64; Alignment = 0xFFFF;	Length = 0x10000;	Offset = 0x10
+
+PciBus: Discovered PCI @ [00|16|00]
+   BAR[0]: Type =  Mem64; Alignment = 0xFFF;	Length = 0x20;	Offset = 0x10
+
+PciBus: Discovered PCI @ [00|16|01]
+   BAR[0]: Type =  Mem64; Alignment = 0xFFF;	Length = 0x20;	Offset = 0x10
+
+PciBus: Discovered PCI @ [00|1B|00]
+   BAR[0]: Type =  Mem64; Alignment = 0x3FFF;	Length = 0x4000;	Offset = 0x10
+
+PciBus: Discovered PCI @ [00|1D|00]
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x400;	Offset = 0x10
+
+PciBus: Discovered PCI @ [00|1F|00]
+
+PciBus: Discovered PCI @ [00|1F|02]
+   BAR[0]: Type =   Io16; Alignment = 0x7;	Length = 0x8;	Offset = 0x10
+   BAR[1]: Type =   Io16; Alignment = 0x3;	Length = 0x4;	Offset = 0x14
+   BAR[2]: Type =   Io16; Alignment = 0x7;	Length = 0x8;	Offset = 0x18
+   BAR[3]: Type =   Io16; Alignment = 0x3;	Length = 0x4;	Offset = 0x1C
+   BAR[4]: Type =   Io16; Alignment = 0x1F;	Length = 0x20;	Offset = 0x20
+   BAR[5]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x800;	Offset = 0x24
+
+PciBus: Discovered PCI @ [00|1F|03]
+   BAR[0]: Type =  Mem64; Alignment = 0xFFF;	Length = 0x100;	Offset = 0x10
+   BAR[3]: Type =   Io16; Alignment = 0x1F;	Length = 0x20;	Offset = 0x20
+
+PciBus: Discovered PCI @ [00|1F|06]
+   BAR[0]: Type =  Mem64; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: HostBridge->SubmitResources() - Success
+ Allocating TypeMem32..
+PciBus: HostBridge->NotifyPhase(AllocateResources) - Success
+PROGRESS CODE: V2011001 I0
+PciBus: Resource Map for Root Bridge PciRoot(0x0)
+Type =   Io16; Base = 0x3000;	Length = 0x1000;	Alignment = 0xFFF
+ Base = 0x3000;	Length = 0x40;	Alignment = 0x3F;	Owner = PCI  [00|02|00:20]
+ Base = 0x3040;	Length = 0x20;	Alignment = 0x1F;	Owner = PCI  [00|1F|03:20]
+ Base = 0x3060;	Length = 0x20;	Alignment = 0x1F;	Owner = PCI  [00|1F|02:20]
+ Base = 0x3080;	Length = 0x8;	Alignment = 0x7;	Owner = PCI  [00|1F|02:18]
+ Base = 0x3088;	Length = 0x8;	Alignment = 0x7;	Owner = PCI  [00|1F|02:10]
+ Base = 0x3090;	Length = 0x4;	Alignment = 0x3;	Owner = PCI  [00|1F|02:1C]
+ Base = 0x3094;	Length = 0x4;	Alignment = 0x3;	Owner = PCI  [00|1F|02:14]
+Type =  Mem32; Base = 0xB0000000;	Length = 0x10500000;	Alignment = 0xFFFFFFF
+ Base = 0xB0000000;	Length = 0x10000000;	Alignment = 0xFFFFFFF;	Owner = PCI  [00|02|00:18]
+ Base = 0xC0000000;	Length = 0x400000;	Alignment = 0x3FFFFF;	Owner = PCI  [00|02|00:10]
+ Base = 0xC0400000;	Length = 0x10000;	Alignment = 0xFFFF;	Owner = PCI  [00|14|00:10]
+ Base = 0xC0410000;	Length = 0x4000;	Alignment = 0x3FFF;	Owner = PCI  [00|03|00:10]
+ Base = 0xC0414000;	Length = 0x4000;	Alignment = 0x3FFF;	Owner = PCI  [00|1B|00:10]
+ Base = 0xC0418000;	Length = 0x100;	Alignment = 0xFFF;	Owner = PCI  [00|1F|03:10]
+ Base = 0xC0419000;	Length = 0x20;	Alignment = 0xFFF;	Owner = PCI  [00|16|00:10]
+ Base = 0xC041A000;	Length = 0x20;	Alignment = 0xFFF;	Owner = PCI  [00|16|01:10]
+ Base = 0xC041B000;	Length = 0x1000;	Alignment = 0xFFF;	Owner = PCI  [00|1F|06:10]
+ Base = 0xC041C000;	Length = 0x800;	Alignment = 0xFFF;	Owner = PCI  [00|1F|02:24]
+ Base = 0xC041D000;	Length = 0x400;	Alignment = 0xFFF;	Owner = PCI  [00|1D|00:10]
+
+[SA] Pcie before EndOfDxe callback.
+SA PCIe enumeration
+SA Save PCI register settings
+SA Register = E0000054, SaPciRegSave = 00000031
+SA Register = E0000094, SaPciRegSave = 00000001
+SA Register = E0000090, SaPciRegSave = 00000001
+SA Register = E000009C, SaPciRegSave = 00000001
+SA Register = E0000098, SaPciRegSave = 4FD00001
+SA ASPM
+GetRom  Bus  0x0
+GetRom  Device  0x0
+GetRom  Function  0x0
+GetRom  VID  0x8086
+GetRom  DID  0xA04
+GetRom  Bus  0x0
+GetRom  Device  0x2
+GetRom  Function  0x0
+GetRom  VID  0x8086
+GetRom  DID  0xA16
+GetRom  Bus  0x0
+GetRom  Device  0x3
+GetRom  Function  0x0
+GetRom  VID  0x8086
+GetRom  DID  0xA0C
+GetRom  Bus  0x0
+GetRom  Device  0x14
+GetRom  Function  0x0
+GetRom  VID  0x8086
+GetRom  DID  0x9C31
+GetRom  Bus  0x0
+GetRom  Device  0x16
+GetRom  Function  0x0
+GetRom  VID  0x8086
+GetRom  DID  0x9C3A
+GetRom  Bus  0x0
+GetRom  Device  0x16
+GetRom  Function  0x1
+GetRom  VID  0x8086
+GetRom  DID  0x9C3B
+GetRom  Bus  0x0
+GetRom  Device  0x1B
+GetRom  Function  0x0
+GetRom  VID  0x8086
+GetRom  DID  0x9C20
+GetRom  Bus  0x0
+GetRom  Device  0x1D
+GetRom  Function  0x0
+GetRom  VID  0x8086
+GetRom  DID  0x9C26
+GetRom  Bus  0x0
+GetRom  Device  0x1F
+GetRom  Function  0x0
+GetRom  VID  0x8086
+GetRom  DID  0x9C43
+GetRom  Bus  0x0
+GetRom  Device  0x1F
+GetRom  Function  0x2
+GetRom  VID  0x8086
+GetRom  DID  0x9C03
+GetRom  Bus  0x0
+GetRom  Device  0x1F
+GetRom  Function  0x3
+GetRom  VID  0x8086
+GetRom  DID  0x9C22
+GetRom  Bus  0x0
+GetRom  Device  0x1F
+GetRom  Function  0x6
+GetRom  VID  0x8086
+GetRom  DID  0x9C24
+  PCI CLASS CODE    = 0x3
+  PCI SUBCLASS CODE = 0x0
+  
+PCI VGA Device Found
+PROGRESS CODE: V2010004 I0
+GraphicsConsole video resolution 2160 x 1440
+Graphics - Mode 0, Column = 80, Row = 25
+Graphics - Mode 1, Column = 80, Row = 50
+Graphics - Mode 2, Column = 100, Row = 31
+Graphics - Mode 3, Column = 270, Row = 75
+SignalEndOfDxeGuid ()/ExitPmAuth () - Start
+All ExitPmAuth callbacks have returned successfully
+UpdateMeSetup event start
+HECI MeMode 0
+RMRR Base  address IGD 00000000AD000000
+RMRR Limit address IGD 00000000AF1FFFFF
+RMRR Base  address USB 00000000AB81B000
+RMRR Limit address USB 00000000AB83AFFF
+VTD base address1 FED90000
+VTD base address2 FED91000
+VBT data found
+UpdateIgdOpRegionEndOfDxe
+SA Save PCI register settings
+SA Register = E00100E8, SaPciRegSave = 00008000
+SA Register = E00100FC, SaPciRegSave = AB88E018
+SA Register = E0010014, SaPciRegSave = 00000000
+SA Register = E0010010, SaPciRegSave = C0000004
+SA Register = E001001C, SaPciRegSave = 00000000
+SA Register = E0010018, SaPciRegSave = B000000C
+SA Register = E0010020, SaPciRegSave = 00003001
+SA Register = E0010004, SaPciRegSave = 00900007
+SA Save platform register settings
+SaSecurityLock
+UpdateNfcSettingsCallback start
+MeScriptSaveEvent() Start
+HECI MeMode 0
+
+------------------------ MePlatformPolicy Dump Begin -----------------
+ Revision : 0x2
+MeConfig ---
+ MeFwDownGrade : 0x0
+ MeLocalFwUpdEnabled : 0x0
+ EndOfPostEnabled : 0x1
+ EndOfPostDone : 0x0
+ MdesCapability : 0x0
+ SvtForPchCap : 0x0
+ MdesForBiosState : 0x0
+MeMiscConfig ---
+ FviSmbiosType : 0xDD
+
+------------------------ MePlatformPolicy Dump End -------------------
+MeScriptSaveEvent() End
+MbpCleared () event Start
+MbpCleared = 1
+MbpCleared () event End
+LegacyRegion NonCSM - 9E000
+InitializeSmramDataContent
+LockBoxSize                               - 4398
+SmramCpuData.GdtrProfileSize              - A
+SmramCpuData.GdtSize                      - 48
+SmramCpuData.IdtrProfileSize              - A
+SmramCpuData.IdtSize                      - 48
+SmramCpuData.CpuPrivateDataSize           - 8
+SmramCpuData.S3BootScriptTableSize        - 4000
+SmramCpuData.S3BspMtrrTableSize           - 200
+SmramCpuData.MicrocodePointerBufferSize   - 14
+SmramCpuData.MicrocodeDataBufferSize      - 0
+SmramCpuData.GdtrProfileOffset            - D8
+SmramCpuData.GdtOffset                    - E2
+SmramCpuData.IdtrProfileOffset            - 12A
+SmramCpuData.IdtOffset                    - 134
+SmramCpuData.CpuPrivateDataOffset         - 17C
+SmramCpuData.S3BootScriptTableOffset      - 184
+SmramCpuData.S3BspMtrrTableOffset         - 4184
+SmramCpuData.MicrocodePointerBufferOffset - 4384
+SmramCpuData.MicrocodeDataBufferOffset    - 4398
+PchOnEndOfDxe() Start
+PCIE SRC Clocks Disabled:   0x00000000
+PCIE SRC Clocks Enabled:    0x00000000
+PCIE SRC Clocks left alone: 0xFFFFFFFF
+HECI MeMode 0
+HECI MeStatus 1E000255
+HECI MeMode 0
+HECI SendMsg:
+00: 00 00 03 00 03 00 00 00 - 00 00 00 00 0C 00 00 00 
+10: 00 00 00 00 00 00 00 00 - 00 00 00 00 01 00 00 00 
+HECI Header: 80200008
+PciERWORegInit() Start
+PciERWORegInit() End
+Save IO Trap Registers to the S3 boot script.
+PcieIoTrapAddress: 2004
+UsbInitBeforeBoot() - Start
+UsbInitBeforeBoot() - End
+ConfigureAudioDspBeforeBoot() Start
+ConfigureAudioDspBeforeBoot() End
+HECI MeMode 0
+HECI MeStatus 1E000255
+HECI MeMode 0
+HECI SendMsg:
+00: 00 00 03 00 0A 00 00 00 - 00 00 00 00 14 00 00 00 
+10: 00 00 00 00 00 00 01 00 - 10 20 01 00 01 00 00 00 
+20: 05 7F 01 00 99 99 99 00 
+HECI Header: 80280008
+Failed to locate Acpi Support Protocol! Status = Success
+Failed to locate Acpi Table Protocol! Status = Success
+PatchPchNvsAreaAddress: PCH NVS Address AB8B3D98 Length E4
+PchOnEndOfDxe() End
+All EndOfDxe callbacks have returned successfully
+SmmLockBoxDxeLib SaveLockBox - Enter
+SmmLockBoxDxeLib SaveLockBox - Exit (Success)
+SmmLockBoxDxeLib SetLockBoxAttributes - Enter
+SmmLockBoxDxeLib SetLockBoxAttributes - Exit (Success)
+SmmLockBoxDxeLib SaveLockBox - Enter
+SmmLockBoxDxeLib SaveLockBox - Exit (Success)
+SmmLockBoxDxeLib SetLockBoxAttributes - Enter
+SmmLockBoxDxeLib SetLockBoxAttributes - Exit (Success)
+I2C MMIO device enumeration entered
+MMIO device enumeration done, Status: Success
+SMM IPL locked SMRAM window
+SmmLockBoxDxeLib RestoreLockBox - Enter
+SmmLockBoxDxeLib RestoreLockBox - Exit (Success)
+SmmLockBoxDxeLib RestoreLockBox - Enter
+SmmLockBoxDxeLib RestoreLockBox - Exit (Success)
+I2C controller found
+
+I2cPortDriverStart entered
+0x00000000A7304718: I2cPort allocated
+I2cPortApiStart entered
+I2cPortApiStart exiting, Status: Success
+I2cPortDriverStart exiting, Status: Success
+I2C controller found
+I2cHostDriverStart entered
+0x00000000A7F66B18: I2cHost allocated
+RDTSC frequency: 2524400000 HZ
+I2cReset
+I2cDisable Status = Success
+I2cEnable Status = Success
+I2cBusConfiguration: 0, set it to -1
+Do we need to set the primary bus configuration here?
+I2cHostDriverStart exiting, Status: Success
+I2C host found
+I2C bus enumeration data found
+
+I2cBusDriverStart entered
+0x00000000A7304318: I2cBus allocated
+0x00000000A7F66B60: I2C host protocol found
+0x00000000A7F66B60: I2C host acpi protocol found
+I2cBusApiStart entered
+I2cBusEnumerate entered
+0x00000000A7304318: Bus allocating I2C Device 0x00000000A7304198
+I2cBusDevicePathAppend entered
+I2cBusDevicePathAppend exiting, Status: Success
+Found one I2C device:AcpiEx(INT33C2,0x1,INT33C2)/AcpiEx(I2C00\SSHUB,0x1,I2C00\SSHUB)
+0x00000000A7304318: Bus allocating I2C Device 0x00000000A7301E18
+I2cBusDevicePathAppend entered
+I2cBusDevicePathAppend exiting, Status: Success
+Found one I2C device:AcpiEx(INT33C2,0x1,INT33C2)/AcpiEx(I2C00\AUDIO,0x1,I2C00\AUDIO)
+I2cBusEnumerate exiting, Status: Success
+I2cBusApiStart exiting, Status: Success
+I2cBusDriverStart exiting, Status: Success
+I2C controller found
+
+I2cPortDriverStart entered
+0x00000000A7301718: I2cPort allocated
+I2cPortApiStart entered
+I2cPortApiStart exiting, Status: Success
+I2cPortDriverStart exiting, Status: Success
+I2C controller found
+I2cHostDriverStart entered
+0x00000000A7A0EE18: I2cHost allocated
+I2cReset
+I2cDisable Status = Success
+I2cEnable Status = Success
+I2cBusConfiguration: 0, set it to -1
+Do we need to set the primary bus configuration here?
+I2cHostDriverStart exiting, Status: Success
+I2C host found
+I2C bus enumeration data found
+
+I2cBusDriverStart entered
+0x00000000A7301418: I2cBus allocated
+0x00000000A7A0EE60: I2C host protocol found
+0x00000000A7A0EE60: I2C host acpi protocol found
+I2cBusApiStart entered
+I2cBusEnumerate entered
+0x00000000A7301418: Bus allocating I2C Device 0x00000000A7301298
+I2cBusDevicePathAppend entered
+I2cBusDevicePathAppend exiting, Status: Success
+Found one I2C device:AcpiEx(INT33C3,0x2,INT33C3)/AcpiEx(I2C01\TPANEL,0x1,I2C01\TPANEL)
+I2cBusEnumerate exiting, Status: Success
+I2cBusApiStart exiting, Status: Success
+I2cBusDriverStart exiting, Status: Success
+INFO - Found device using _CIDSTR value I2C00\SSHUB
+I2cBusStartRequest entered
+I2cBusFrequencySet entered
+  InputFreq BusClockHertz: 100000000 100000
+I2cDisable Status Success
+I2cBusFrequencySet exiting, Status: Success
+I2cStartRequest Entered
+Base address 0xFE103000
+I2c hardware is inactive now
+I2cDisable Status = Success
+I2cEnable Status = Success
+rdtsc_start:     15981237145
+rdtsc_timeout:   18505637145
+Write: Enters inner loop TransmitEnd: 0x00000000A9BE81A2 WriteBuffer:0x00000000A9BE81A0 2 bytes to be transfered
+Read: Enters inner loop ReceiveDataEnd:0x00000000A9BE80A4 ReceiveRequest:0x00000000A9BE80A0 4 bytes to be transfered
+TX ABRT ,4 bytes hasn't been transferred
+Duration: 593 us
+I2cStartRequest Exit with Status Device Error
+I2cBusStartRequest exiting, Status: Device Error
+INFO - _CIDSTR value (I2C00\AUDIO) does not match I2C00\SSHUB!
+INFO - _CIDSTR value (I2C01\TPANEL) does not match I2C00\SSHUB!
+I2C controller found
+I2C controller already started
+I2C controller found
+I2C controller already started
+I2C controller found
+I2C controller already started
+I2C controller found
+I2C controller already started
+INFO - Found device using _CIDSTR value I2C00\SSHUB
+I2cBusStartRequest entered
+I2cStartRequest Entered
+Base address 0xFE103000
+I2c hardware is inactive now
+I2cDisable Status = Success
+I2cEnable Status = Success
+rdtsc_start:     15992580715
+rdtsc_timeout:   18516980715
+Write: Enters inner loop TransmitEnd: 0x00000000A9BE8072 WriteBuffer:0x00000000A9BE8070 2 bytes to be transfered
+Read: Enters inner loop ReceiveDataEnd:0x00000000A9BE818E ReceiveRequest:0x00000000A9BE8170 30 bytes to be transfered
+TX ABRT ,30 bytes hasn't been transferred
+Duration: 594 us
+I2cStartRequest Exit with Status Device Error
+I2cBusStartRequest exiting, Status: Device Error
+INFO - _CIDSTR value (I2C00\AUDIO) does not match I2C00\SSHUB!
+INFO - _CIDSTR value (I2C01\TPANEL) does not match I2C00\SSHUB!
+SignalEndOfDxeGuid ()/ExitPmAuth () - End
+RPFN: 543210
+PlatformBootManagerInit - 2
+XhcCreateUsb3Hc: Capability length 0x80
+XhcCreateUsb3Hc: HcSParams1 0xD000820
+XhcCreateUsb3Hc: HcSParams2 0x84000054
+XhcCreateUsb3Hc: HcCParams 0x200077C1
+XhcCreateUsb3Hc: DBOff 0x3000
+XhcCreateUsb3Hc: RTSOff 0x2000
+XhcCreateUsb3Hc: UsbLegSupOffset 0x460
+XhcCreateUsb3Hc: DebugCapSupOffset 0x480
+XhcSetBiosOwnership: called to set BIOS ownership
+XhcResetHC!
+XhcInitSched:DCBAA=0xA7222000
+XhcInitSched:XHC_CRCR=0xA7222140
+XhcInitSched:XHC_EVENTRING=0xA7223140
+XhcDriverBindingStart: XHCI started for controller @ A7360798
+PROGRESS CODE: V2020000 I0
+PROGRESS CODE: V2020004 I0
+PROGRESS CODE: V2020001 I0
+XhcResetHC!
+XhcInitSched:DCBAA=0xA7222000
+XhcInitSched:XHC_CRCR=0xA7222140
+XhcInitSched:XHC_EVENTRING=0xA7223140
+XhcReset: status Success
+XhcGetState: current state 0
+XhcSetState: status Success
+PROGRESS CODE: V2020003 I0
+XhcGetCapability: 13 ports, 64 bit 1
+UsbRootHubInit: root hub A725DA18 - max speed 3, 13 ports
+UsbBusStart: usb bus started on A7360798, root hub A725DA18
+EhcCreateUsb2Hc: capability length 32
+EhcDriverBindingStart: EHCI started for controller @ A735E798
+PROGRESS CODE: V2020000 I0
+PROGRESS CODE: V2020004 I0
+PROGRESS CODE: V2020001 I0
+EhcReset: exit status Success
+EhcGetState: current state 1
+PROGRESS CODE: V2020003 I0
+EhcGetCapability: 3 ports, 64 bit 1
+UsbRootHubInit: root hub A725D318 - max speed 2, 3 ports
+UsbEnumeratePort: port 0 state - 101, change - 01 on A725D318
+UsbEnumeratePort: Device Connect/Disconnect Normally
+UsbEnumeratePort: new device connected at port 0
+EhcSetRootHubPortFeature: exit status Success
+EhcClearRootHubPortFeature: exit status Success
+UsbEnumerateNewDev: hub port 0 is reset
+UsbEnumerateNewDev: device is of 2 speed
+UsbEnumerateNewDev: device uses translator (0, 0)
+UsbEnumerateNewDev: device is now ADDRESSED at 1
+UsbEnumerateNewDev: max packet size for EP 0 is 64
+UsbBuildDescTable: device has 1 configures
+UsbGetOneConfig: total length is 25
+UsbParseConfigDesc: config 1 has 1 interfaces
+UsbParseInterfaceDesc: interface 0(setting 0) has 1 endpoints
+EhcExecTransfer: transfer failed with 2
+EhcControlTransfer: error - Device Error, transfer - 2
+UsbBuildDescTable: get language ID table Unsupported
+UsbEnumerateNewDev: device 1 is now in CONFIGED state
+UsbSelectConfig: config 1 selected for device 1
+UsbSelectSetting: setting 0 selected for interface 0
+UsbConnectDriver: found a hub device
+UsbHubInit: hub 1 has 8 ports
+UsbHubInit: hub 1 initialized
+PROGRESS CODE: V2020006 I0
+EhcClearRootHubPortFeature: exit status Success
+UsbBusStart: usb bus started on A735E798, root hub A725D318
+Local bootmode before FastBoot update -2
+BmpHeader->ImageOffset 0x36
+BmpHeader->PixelWidth 0x193
+BmpHeader->PixelHeight 0x190
+BmpHeader->BitPerPixel 0x18
+BmpHeader->ImageSize 0x765C0
+BmpHeader->HeaderSize 0x28
+BmpHeader->Size 0x765F6
+Landscape mode detected 
+Logo Does not start at 18.2% from top of the Screen, DestY is 350 and 18.2% starts at 262 
+MsPlatformBootManagerLib, Memory test done with status 0SataControllerStart() Start
+PROGRESS CODE: V2010004 I0
+SataControllerStart() End
+PROGRESS CODE: V2010004 I0
+CalculateBestPioMode() End
+PROGRESS CODE: V1070004 I0
+HddPasswordDxe: Create new form for device[0][0] at Bus 0x0 Dev 0x1F Func 0x2
+PROGRESS CODE: V2080000 I0
+PROGRESS CODE: V2080003 I0
+PROGRESS CODE: V2070000 I0
+PROGRESS CODE: V2070003 I0
+PROGRESS CODE: V2080000 I0
+PROGRESS CODE: V2080003 I0
+PROGRESS CODE: V2080004 I0
+PROGRESS CODE: V2070000 I0
+PROGRESS CODE: V2070003 I0
+ BlockSize : 512 
+ LastBlock : EE7C2AF 
+ Valid efi partition table header
+ Valid efi partition table header
+ Valid primary and Valid backup partition table
+ Partition entries read block success
+ Number of partition entries: 128
+ start check partition entries
+ End check partition entries
+ Index : 0
+ Start LBA : 800
+ End LBA : 1A97FF
+ Partition size: 1A9000
+ Start : 100000 End : 352FFE00
+ Index : 1
+ Start LBA : 1A9800
+ End LBA : 20D7FF
+ Partition size: 64000
+ Start : 35300000 End : 41AFFE00
+ Index : 2
+ Start LBA : 20D800
+ End LBA : 24D7FF
+ Partition size: 40000
+ Start : 41B00000 End : 49AFFE00
+ Index : 3
+ Start LBA : 24D800
+ End LBA : E3EFFFF
+ Partition size: E1A2800
+ Start : 49B00000 End : 1C7DFFFE00
+ Index : 4
+ Start LBA : E3F0000
+ End LBA : EE7BFFF
+ Partition size: A8C000
+ Start : 1C7E000000 End : 1DCF7FFE00
+Prepare to Free Pool
+ BlockSize : 512 
+ LastBlock : 1A8FFF 
+ BlockSize : 512 
+ LastBlock : 63FFF 
+ BlockSize : 512 
+ LastBlock : 3FFFF 
+ BlockSize : 512 
+ LastBlock : E1A27FF 
+UsbEnumeratePort: port 0 state - 101, change - 01 on A725D018
+UsbEnumeratePort: Device Connect/Disconnect Normally
+UsbEnumeratePort: new device connected at port 0
+UsbEnumerateNewDev: hub port 0 is reset
+UsbEnumerateNewDev: device is of 2 speed
+UsbEnumerateNewDev: device uses translator (0, 0)
+UsbEnumerateNewDev: device is now ADDRESSED at 2
+UsbEnumerateNewDev: max packet size for EP 0 is 64
+UsbBuildDescTable: device has 1 configures
+UsbGetOneConfig: total length is 41
+UsbParseConfigDesc: config 1 has 1 interfaces
+UsbParseInterfaceDesc: interface 0(setting 0) has 1 endpoints
+UsbParseInterfaceDesc: interface 0(setting 1) has 1 endpoints
+UsbEnumerateNewDev: device 2 is now in CONFIGED state
+UsbSelectConfig: config 1 selected for device 2
+UsbSelectSetting: setting 0 selected for interface 0
+UsbConnectDriver: found a hub device
+UsbHubInit: hub 2 has 4 ports
+UsbHubInit: hub 2 initialized
+PROGRESS CODE: V2020006 I0
+UsbEnumeratePort: port 5 state - 101, change - 01 on A725D018
+UsbEnumeratePort: Device Connect/Disconnect Normally
+UsbEnumeratePort: new device connected at port 5
+UsbEnumerateNewDev: hub port 5 is reset
+UsbEnumerateNewDev: device is of 0 speed
+UsbEnumerateNewDev: device uses translator (1, 6)
+EhcExecTransfer: transfer failed with 2
+EhcControlTransfer: error - Device Error, transfer - 2
+UsbEnumerateNewDev: failed to set device address - Device Error
+UsbEnumeratePort: port 7 state - 101, change - 01 on A725D018
+UsbEnumeratePort: Device Connect/Disconnect Normally
+UsbEnumeratePort: new device connected at port 7
+UsbEnumerateNewDev: hub port 7 is reset
+UsbEnumerateNewDev: device is of 2 speed
+UsbEnumerateNewDev: device uses translator (0, 0)
+UsbEnumerateNewDev: device is now ADDRESSED at 4
+UsbEnumerateNewDev: max packet size for EP 0 is 64
+UsbBuildDescTable: device has 1 configures
+UsbGetOneConfig: total length is 1982
+UsbParseConfigDesc: config 1 has 3 interfaces
+UsbParseInterfaceDesc: interface 0(setting 0) has 1 endpoints
+UsbParseInterfaceDesc: interface 1(setting 0) has 0 endpoints
+UsbParseInterfaceDesc: interface 1(setting 1) has 1 endpoints
+UsbParseInterfaceDesc: interface 2(setting 0) has 0 endpoints
+UsbParseInterfaceDesc: interface 2(setting 1) has 1 endpoints
+UsbParseInterfaceDesc: interface 2(setting 2) has 1 endpoints
+UsbEnumerateNewDev: device 4 is now in CONFIGED state
+UsbSelectConfig: config 1 selected for device 4
+UsbSelectSetting: setting 0 selected for interface 0
+UsbSelectSetting: setting 0 selected for interface 1
+UsbSelectSetting: setting 0 selected for interface 2
+PROGRESS CODE: V2020006 I0
+UsbEnumeratePort: port 0 state - 101, change - 01 on A71BBF18
+UsbEnumeratePort: Device Connect/Disconnect Normally
+UsbEnumeratePort: new device connected at port 0
+UsbEnumerateNewDev: hub port 0 is reset
+UsbEnumerateNewDev: device is of 2 speed
+UsbEnumerateNewDev: device uses translator (0, 0)
+UsbEnumerateNewDev: device is now ADDRESSED at 5
+UsbEnumerateNewDev: max packet size for EP 0 is 64
+UsbBuildDescTable: device has 1 configures
+UsbGetOneConfig: total length is 32
+UsbParseConfigDesc: config 1 has 1 interfaces
+UsbParseInterfaceDesc: interface 0(setting 0) has 2 endpoints
+UsbEnumerateNewDev: device 5 is now in CONFIGED state
+UsbSelectConfig: config 1 selected for device 5
+UsbSelectSetting: setting 0 selected for interface 0
+PROGRESS CODE: V2020006 I0
+UsbEnumeratePort: port 1 state - 101, change - 01 on A71BBF18
+UsbEnumeratePort: Device Connect/Disconnect Normally
+UsbEnumeratePort: new device connected at port 1
+UsbEnumerateNewDev: hub port 1 is reset
+UsbEnumerateNewDev: device is of 2 speed
+UsbEnumerateNewDev: device uses translator (0, 0)
+UsbEnumerateNewDev: device is now ADDRESSED at 6
+UsbEnumerateNewDev: max packet size for EP 0 is 64
+UsbBuildDescTable: device has 1 configures
+UsbGetOneConfig: total length is 32
+UsbParseConfigDesc: config 1 has 1 interfaces
+UsbParseInterfaceDesc: interface 0(setting 0) has 2 endpoints
+UsbEnumerateNewDev: device 6 is now in CONFIGED state
+UsbSelectConfig: config 1 selected for device 6
+UsbSelectSetting: setting 0 selected for interface 0
+PROGRESS CODE: V2020006 I0
+UsbEnumeratePort: port 2 state - 101, change - 01 on A71BBF18
+UsbEnumeratePort: Device Connect/Disconnect Normally
+UsbEnumeratePort: new device connected at port 2
+UsbEnumerateNewDev: hub port 2 is reset
+UsbEnumerateNewDev: device is of 0 speed
+UsbEnumerateNewDev: device uses translator (2, 3)
+UsbEnumerateNewDev: device is now ADDRESSED at 7
+UsbEnumerateNewDev: max packet size for EP 0 is 64
+UsbBuildDescTable: device has 1 configures
+UsbGetOneConfig: total length is 84
+UsbParseConfigDesc: config 1 has 3 interfaces
+UsbParseInterfaceDesc: interface 0(setting 0) has 1 endpoints
+UsbParseInterfaceDesc: interface 1(setting 0) has 1 endpoints
+UsbParseInterfaceDesc: interface 2(setting 0) has 1 endpoints
+UsbEnumerateNewDev: device 7 is now in CONFIGED state
+UsbSelectConfig: config 1 selected for device 7
+UsbSelectSetting: setting 0 selected for interface 0
+UsbConnectDriver: TPL before connect is 8, A71B1D98
+PROGRESS CODE: V1010004 I0
+PROGRESS CODE: V1010003 I0
+PROGRESS CODE: V1010006 I0
+PROGRESS CODE: V1010001 I0
+PROGRESS CODE: V1011001 I0
+UsbConnectDriver: TPL after connect is 8
+UsbSelectSetting: setting 0 selected for interface 1
+UsbSelectSetting: setting 0 selected for interface 2
+PROGRESS CODE: V2020006 I0
+UsbEnumeratePort: port 3 state - 101, change - 01 on A71BBF18
+UsbEnumeratePort: Device Connect/Disconnect Normally
+UsbEnumeratePort: new device connected at port 3
+UsbEnumerateNewDev: hub port 3 is reset
+UsbEnumerateNewDev: device is of 0 speed
+UsbEnumerateNewDev: device uses translator (2, 4)
+UsbEnumerateNewDev: device is now ADDRESSED at 8
+UsbEnumerateNewDev: max packet size for EP 0 is 64
+UsbBuildDescTable: device has 1 configures
+UsbGetOneConfig: total length is 84
+UsbParseConfigDesc: config 1 has 3 interfaces
+UsbParseInterfaceDesc: interface 0(setting 0) has 1 endpoints
+UsbParseInterfaceDesc: interface 1(setting 0) has 1 endpoints
+UsbParseInterfaceDesc: interface 2(setting 0) has 1 endpoints
+UsbEnumerateNewDev: device 8 is now in CONFIGED state
+UsbSelectConfig: config 1 selected for device 8
+UsbSelectSetting: setting 0 selected for interface 0
+UsbConnectDriver: TPL before connect is 8, A71ADF18
+PROGRESS CODE: V1010004 I0
+PROGRESS CODE: V1010003 I0
+PROGRESS CODE: V1010006 I0
+PROGRESS CODE: V1010001 I0
+PROGRESS CODE: V1011001 I0
+UsbConnectDriver: TPL after connect is 8
+UsbSelectSetting: setting 0 selected for interface 1
+UsbSelectSetting: setting 0 selected for interface 2
+PROGRESS CODE: V2020006 I0
+ BlockSize : 512 
+ LastBlock : A8BFFF 
+BIOS ID: BDW-E2N1.86C.0075.D00.1408222041
+<InitCPUStrings><InitNBStrings><InitSBStrings><InitAcpiStrings><InitMeInfo>
+HECI MeMode 0
+HECI MeMode 0
+HECI SendMsg:
+00: 03 02 00 00 00 00 00 00 
+HECI Header: 80080007
+HECI ReadMsg:
+00: 03 82 00 00 00 00 00 00 - 04 40 1A 10 31 
+PTT SkuMgr: PttCapability = 1
+HECI MeMode 0
+HECI MeMode 0
+HECI SendMsg:
+00: 03 02 00 00 20 00 00 00 
+HECI Header: 80080007
+HECI ReadMsg:
+00: 03 82 00 00 20 00 00 00 - 04 40 1A 10 31 
+PTT SkuMgr: PttState = 1
+HECI MeMode 0
+HECI MeMode 0
+HECI SendMsg:
+00: 08 0C 4D 00 
+HECI Header: 80040007
+HECI ReadMsg:
+00: 08 8B 4D 00 20 04 00 00 - 04 40 1A 10 
+<InitPlatformStrings><InitAtInfo>ATAM: ATAM Protocol failed, Status = Not Found
+<NatInitSioStrings><InitSioStrings_WPCN381U><InitCPUStrings><InitNBStrings><InitSBStrings>GbePortSel=4
+Update SATA device info
+PROGRESS CODE: V2080000 I0
+PROGRESS CODE: V2080003 I0
+PROGRESS CODE: V2070000 I0
+PROGRESS CODE: V2070003 I0
+ BlockSize : 512 
+ LastBlock : EE7C2AF 
+ Valid efi partition table header
+ Valid efi partition table header
+ Valid primary and Valid backup partition table
+ Partition entries read block success
+ Number of partition entries: 128
+ start check partition entries
+ End check partition entries
+ Index : 0
+ Start LBA : 800
+ End LBA : 1A97FF
+ Partition size: 1A9000
+ Start : 100000 End : 352FFE00
+ Index : 1
+ Start LBA : 1A9800
+ End LBA : 20D7FF
+ Partition size: 64000
+ Start : 35300000 End : 41AFFE00
+ Index : 2
+ Start LBA : 20D800
+ End LBA : 24D7FF
+ Partition size: 40000
+ Start : 41B00000 End : 49AFFE00
+ Index : 3
+ Start LBA : 24D800
+ End LBA : E3EFFFF
+ Partition size: E1A2800
+ Start : 49B00000 End : 1C7DFFFE00
+ Index : 4
+ Start LBA : E3F0000
+ End LBA : EE7BFFF
+ Partition size: A8C000
+ Start : 1C7E000000 End : 1DCF7FFE00
+Prepare to Free Pool
+ BlockSize : 512 
+ LastBlock : 1A8FFF 
+ BlockSize : 512 
+ LastBlock : 3FFFF 
+ BlockSize : 512 
+ LastBlock : E1A27FF 
+ BlockSize : 512 
+ LastBlock : A8BFFF 
+<InitAcpiStrings><InitMeInfo>
+HECI MeMode 0
+HECI MeMode 0
+HECI SendMsg:
+00: 03 02 00 00 00 00 00 00 
+HECI Header: 80080007
+HECI ReadMsg:
+00: 03 82 00 00 00 00 00 00 - 04 40 1A 10 31 
+PTT SkuMgr: PttCapability = 1
+HECI MeMode 0
+HECI MeMode 0
+HECI SendMsg:
+00: 03 02 00 00 20 00 00 00 
+HECI Header: 80080007
+HECI ReadMsg:
+00: 03 82 00 00 20 00 00 00 - 04 40 1A 10 31 
+PTT SkuMgr: PttState = 1
+HECI MeMode 0
+HECI MeMode 0
+HECI SendMsg:
+00: 08 0C 4D 00 
+HECI Header: 80040007
+HECI ReadMsg:
+00: 08 8B 4D 00 20 04 00 00 - 04 40 1A 10 
+<InitOverClockStrings>SmbusExecute() Start, SmbusDeviceAddress=A2, Command=0, Operation=4
+SmbusExecute() Start, SmbusDeviceAddress=A2, Command=F, Operation=4
+SmbusExecute() Start, SmbusDeviceAddress=A2, Command=E, Operation=4
+SmbusExecute() Start, SmbusDeviceAddress=A2, Command=12, Operation=4
+SmbusExecute() Start, SmbusDeviceAddress=A2, Command=14, Operation=4
+SmbusExecute() Start, SmbusDeviceAddress=A2, Command=15, Operation=4
+SmbusExecute() Start, SmbusDeviceAddress=A2, Command=16, Operation=4
+SmbusExecute() Start, SmbusDeviceAddress=A2, Command=0, Operation=4
+SmbusExecute() Start, SmbusDeviceAddress=A2, Command=F, Operation=4
+SmbusExecute() Start, SmbusDeviceAddress=A2, Command=E, Operation=4
+SmbusExecute() Start, SmbusDeviceAddress=A2, Command=12, Operation=4
+SmbusExecute() Start, SmbusDeviceAddress=A2, Command=14, Operation=4
+SmbusExecute() Start, SmbusDeviceAddress=A2, Command=15, Operation=4
+SmbusExecute() Start, SmbusDeviceAddress=A2, Command=16, Operation=4
+<InitAtInfo>ATAM: ATAM Protocol failed, Status = Not Found
+<InitAcpiStrings><InitBootTimeStrings><InitAtInfo>ATAM: ATAM Protocol failed, Status = Not Found
+<InitAcpiStrings><InitAtInfo>ATAM: ATAM Protocol failed, Status = Not Found
+[Bds]=============Dumping Boot Options=============
+[Bds]Boot0008: Custom Boot Option 		 0x0001
+[Bds]Boot0004: Windows Boot Manager 		 0x0001
+[Bds]Boot0003: SurfaceFrontPage 		 0x0109
+[Bds]Boot0000: Internal EDK Shell 		 0x0001
+[Bds]Boot0001: Intel Settings Menu 		 0x0001
+[Bds]Boot0002: Boot Device List 		 0x0109
+[Bds]Boot0008: Custom Boot Option 		 0x0001
+[Bds]=============Dumping Boot Options Finished====
+WaitForEcInputBufferToEmpty: Final EcStatus = 8 Retries = 254.
+EmbeddedControllerReadByte: Final EcCommand = 80 Port = 66.
+WaitForEcInputBufferToEmpty: Final EcStatus = 8 Retries = 172.
+EmbeddedControllerReadByte: Final Offset = F0 Port = 62.
+EmbeddedControllerReadByte: Final EcStatus = 1 Retries = 247.
+EmbeddedControllerReadByte: Final Value = 0.
+Volume down then power button sequence not found.
+WaitForEcInputBufferToEmpty: Final EcStatus = 0 Retries = 254.
+EmbeddedControllerReadByte: Final EcCommand = 80 Port = 66.
+WaitForEcInputBufferToEmpty: Final EcStatus = 8 Retries = 254.
+EmbeddedControllerReadByte: Final Offset = F0 Port = 62.
+EmbeddedControllerReadByte: Final EcStatus = 1 Retries = 248.
+EmbeddedControllerReadByte: Final Value = 0.
+Volume up then power button sequence not found.
+PROGRESS CODE: V3051001 I0
+Writing debug log to a file (69566 bytes)...
+FPDT: ACPI Boot Performance Table address = 0xAB59E000
+FmpDeviceLib returned error from FmpDeviceLock().  Status = Unsupported
+EsrtDxe: Installed ESRT table. 
+CRC = ADA0CC68 and Status = 0
+ HECI MeMode 0
+HECI MeStatus 1E000255
+HECI MeStatus 1E000255
+HECI MeStatus 1E000255
+Sending EOP...
+HECI MeMode 0
+HECI MeMode 0
+HECI SendMsg:
+00: FF 0C 00 00 
+HECI Header: 80040007
+HECI ReadMsg:
+00: FF 8C 00 00 00 00 00 00 
+HECI MeMode 0
+HECI MeMode 0
+PchOnReadyToBoot() Start
+PchOnReadyToBoot() End
+Status=0 SmbiosType1UuidVar.Uuid=6E8CB632-30DA-E63A-87BB-574DF020EF20
+Device paths in OpenVolumeSFS found  are 0 -> PciRoot(0x0)/Pci(0x1F,0x2)/Sata(0x0,0x0,0x0)/HD(2,GPT,4936A545-ED7A-4508-93BC-743603791C4B,0x1A9800,0x64000) 
+Deleting file: DebugLog_1.txt 
+
+UsbEnumerateNewDev: device is PROGRESS CODE: V3058000 I0
+Memory  Previous  Current    Next   
+ Type    Pages     Pages     Pages  
+======  ========  ========  ========
+  09    00000048  0000003F  00000048
+  0A    0000004D  00000034  0000004D
+  00    0000037D  000002CB  0000037D
+  06    00000014  0000000F  00000014
+  05    00000082  00000068  00000082
+[Bds]Booting Custom Boot Option
+PROGRESS CODE: V3058001 I0
+Image Return Status = Invalid Parameter
+ERROR: C40000002:V3051003 I0PROGRESS CODE: V3051001 I0
+Appending debug log to a file (490 bytes)...
+CRC = 360B4FDE and Status = 0
+ 

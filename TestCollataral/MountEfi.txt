@@ -1,0 +1,6 @@
+select disk 0
+list partition 
+select partition 2
+assign letter=b 
+
+

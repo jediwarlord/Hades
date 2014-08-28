@@ -138,6 +138,7 @@
             this.ResultButton.TabIndex = 7;
             this.ResultButton.Text = "Get Latest Results";
             this.ResultButton.UseVisualStyleBackColor = true;
+            this.ResultButton.Click += new System.EventHandler(this.ResultButton_Click);
             // 
             // Form1
             // 
