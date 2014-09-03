@@ -36,10 +36,14 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.Testing = new System.Windows.Forms.GroupBox();
-            this.TestResult = new System.Windows.Forms.TextBox();
             this.ResultButton = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.TestName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Result = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.treeView1 = new System.Windows.Forms.TreeView();
             this.groupBox1.SuspendLayout();
             this.Testing.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // TestList
@@ -114,21 +118,13 @@
             // 
             // Testing
             // 
-            this.Testing.Controls.Add(this.TestResult);
+            this.Testing.Controls.Add(this.dataGridView1);
             this.Testing.Location = new System.Drawing.Point(481, 65);
             this.Testing.Name = "Testing";
             this.Testing.Size = new System.Drawing.Size(387, 444);
             this.Testing.TabIndex = 6;
             this.Testing.TabStop = false;
             this.Testing.Text = "Test Results";
-            // 
-            // TestResult
-            // 
-            this.TestResult.Location = new System.Drawing.Point(7, 21);
-            this.TestResult.Multiline = true;
-            this.TestResult.Name = "TestResult";
-            this.TestResult.Size = new System.Drawing.Size(374, 417);
-            this.TestResult.TabIndex = 0;
             // 
             // ResultButton
             // 
@@ -140,11 +136,49 @@
             this.ResultButton.UseVisualStyleBackColor = true;
             this.ResultButton.Click += new System.EventHandler(this.ResultButton_Click);
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.TestName,
+            this.Result});
+            this.dataGridView1.Location = new System.Drawing.Point(7, 21);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(374, 417);
+            this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataGridView1.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.dataGridView1_DataBindingComplete);
+            // 
+            // TestName
+            // 
+            this.TestName.HeaderText = "Test Name";
+            this.TestName.Name = "TestName";
+            this.TestName.ReadOnly = true;
+            // 
+            // Result
+            // 
+            this.Result.HeaderText = "Result";
+            this.Result.Name = "Result";
+            this.Result.ReadOnly = true;
+            // 
+            // treeView1
+            // 
+            this.treeView1.Location = new System.Drawing.Point(52, 560);
+            this.treeView1.Name = "treeView1";
+            this.treeView1.Size = new System.Drawing.Size(780, 367);
+            this.treeView1.TabIndex = 8;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(877, 531);
+            this.ClientSize = new System.Drawing.Size(877, 958);
+            this.Controls.Add(this.treeView1);
             this.Controls.Add(this.ResultButton);
             this.Controls.Add(this.Testing);
             this.Controls.Add(this.button5);
@@ -158,7 +192,7 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.Testing.ResumeLayout(false);
-            this.Testing.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -173,8 +207,11 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.GroupBox Testing;
-        private System.Windows.Forms.TextBox TestResult;
         private System.Windows.Forms.Button ResultButton;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TestName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Result;
+        private System.Windows.Forms.TreeView treeView1;
 
     }
 }

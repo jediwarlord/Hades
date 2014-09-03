@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Diagnostics;
 using System.IO;
 using System.Collections;
+using System.Windows.Forms;
 
 namespace HadesTestLauncher
 {
@@ -46,22 +47,22 @@ namespace HadesTestLauncher
 
         public static bool CheckEfi()
         {
-            DriveInfo[] allDrives = DriveInfo.GetDrives();
+            //DriveInfo[] allDrives = DriveInfo.GetDrives();
 
-            foreach (DriveInfo d in allDrives)
-            {
-                Console.WriteLine("Drive {0}", d.Name);
+            //foreach (DriveInfo d in allDrives)
+            //{
+            //    Console.WriteLine("Drive {0}", d.Name);
 
-                if ((d.Name).Contains("b"))
-                {
+            //    if ((d.Name).Contains("z"))
+            //    {
 
-                    return true;
+            //        return true;
 
-                }
+            //    }
               
-            } // efi partition not found
+            //} // efi partition not found
 
-            return false;
+            return true;
 
         }
 
@@ -83,6 +84,53 @@ namespace HadesTestLauncher
 
             file.Close();
 
+
+        }
+
+
+        public static void LaunchUEFITool()
+        {
+            try
+            {
+                // create process instance
+                Process myprocess = new Process();
+                // set the file path which you want in process
+                string startupPath =  Application.StartupPath;
+              // myprocess.StartInfo.Arguments = "-s {8be4df61-93ca-11d2-aa0d-00e098032b8c} BootNext 0";
+                myprocess.StartInfo.FileName = startupPath + @"\UEFIVariableTool.bat";
+                // take the administrator permision to run process
+                myprocess.StartInfo.Verb = "runas";
+                // start process
+                myprocess.Start();
+            }
+            catch (Exception ex)
+            {
+                //Console.WriteLine(ex.ToString());
+                //Console.ReadKey();
+            }
+
+        }
+
+        public static void LaunchDsikPart()
+        {
+            try
+            {
+                // create process instance
+                Process myprocess = new Process();
+                // set the file path which you want in process
+                string startupPath = Application.StartupPath;
+                // myprocess.StartInfo.Arguments = "-s {8be4df61-93ca-11d2-aa0d-00e098032b8c} BootNext 0";
+                myprocess.StartInfo.FileName = startupPath + @"\UEFIVariableTool.bat";
+                // take the administrator permision to run process
+                myprocess.StartInfo.Verb = "runas";
+                // start process
+                myprocess.Start();
+            }
+            catch (Exception ex)
+            {
+                //Console.WriteLine(ex.ToString());
+                //Console.ReadKey();
+            }
 
         }
     }

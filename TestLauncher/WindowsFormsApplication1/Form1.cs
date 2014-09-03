@@ -16,6 +16,7 @@ namespace HadesTestLauncher
     {
         private static String FilePath = @"z:\TestCases.txt";
         private static String TestResults = @"z:\TestResults.txt";
+        private static Dictionary<string, string> TestResultsHolder = new Dictionary<string, string>();
         Arguments CommandLine;
         // The path to the key where Windows looks for startup applications
         RegistryKey rkApp = Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run", true);
@@ -120,16 +121,33 @@ namespace HadesTestLauncher
         private void button4_Click(object sender, EventArgs e)
         {
             //Clearing the file out.
-            System.IO.File.WriteAllText(CommandLine["file"], string.Empty);
-
-            //We want to save the contents of the testfile list.
-            using (System.IO.StreamWriter file = new System.IO.StreamWriter(CommandLine["file"]))
+            if (CommandLine["file"] == null)
             {
-                foreach (Object o in TestList.Items)
+                System.IO.File.WriteAllText(FilePath, string.Empty);
+
+                using (System.IO.StreamWriter file = new System.IO.StreamWriter(FilePath))
                 {
-                        file.WriteLine(o.ToString());   
+                    foreach (Object o in TestList.Items)
+                    {
+                        file.WriteLine(o.ToString());
+                    }
+                }
+            } else
+            {
+                System.IO.File.WriteAllText(CommandLine["file"], string.Empty);
+
+                using (System.IO.StreamWriter file = new System.IO.StreamWriter(CommandLine["file"]))
+                {
+                    foreach (Object o in TestList.Items)
+                    {
+                        file.WriteLine(o.ToString());
+                    }
                 }
             }
+            
+
+            //We want to save the contents of the testfile list.
+         
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -143,7 +161,13 @@ namespace HadesTestLauncher
         private void button3_Click(object sender, EventArgs e)
         {
             rkApp.SetValue("TestEFI", Application.ExecutablePath.ToString());
+
+            UtitlityFunctions.LaunchUEFITool();
+
             System.Diagnostics.Process.Start(@"C:\WINDOWS\system32\Shutdown", "-s -r 50");
+
+            //We will set the new bootnext variable to the new bootvalue.
+           // UInt16 BootNext = 0; //This is hardcoded to the internal EFI Shell
         }
 
         private void ResultButton_Click(object sender, EventArgs e)
@@ -168,17 +192,83 @@ namespace HadesTestLauncher
         private void GetResults(string File)
         {
             string line = null;
-            string 
+            int i = 0;
+            int found = 0;
+            int indexEndName = 0;
+            List<string> comments = new List<string>();
 
             System.IO.StreamReader file =
                 new System.IO.StreamReader(File);
             while ((line = file.ReadLine()) != null)
             {
-               
+                i = 0;
+
+                
+
+                found = line.IndexOf("case -> ", i);
+
+                if (found >= 0)
+                {
+                    //Get Test Case Name and PASS or FAIL.
+                    //Add node to tree.
+                    
+
+                    indexEndName = line.IndexOf(" -> ", (found + 8));
+                    string CaseName = line.Substring((found + 8), (indexEndName - (found +8))); // +8 for getting the start of the name of the test case.
+                    
+                    
+                    //Now lets get the PASS or FAIL
+                    string PassOrFail = line.Substring((indexEndName + 4));
+
+                    TreeNode treeNode = new TreeNode(CaseName);
+                    this.treeView1.Nodes.Add(treeNode);
+
+                    TestResultsHolder.Add(CaseName, PassOrFail);
+
+                    //flush out comments and add them to tree.
+                    //i = ++found;
+                }
+                else
+                {
+                    comments.Add(line);
+                }
+
+                
+
             }
+
+
+            //populate the pane with the results.
+            foreach (KeyValuePair<string, string> pair in TestResultsHolder)
+            {
+                Console.WriteLine("{0}, {1}",
+                pair.Key,
+                pair.Value);
+
+                this.dataGridView1.Rows.Add(pair.Key, pair.Value);
+            }
+            this.dataGridView1.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridView1.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+
 
             file.Close();
 
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
+        {
+            this.dataGridView1.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridView1.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
 
         }
     }
